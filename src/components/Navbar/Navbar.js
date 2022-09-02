@@ -13,10 +13,10 @@ function NavBar() {
                 <Container>
                     <Navbar.Brand>Noah Hoffman</Navbar.Brand>
                     <Nav className="me-auto">
-                        <Nav.Link href="/">Home</Nav.Link>
-                        <Nav.Link href="#projects">Projects</Nav.Link>
-                        <Nav.Link href="#skills">Skills</Nav.Link>
-                        <Nav.Link href="/contact">
+                        <Nav.Link className='navBarLinks' href="/">Home</Nav.Link>
+                        <Nav.Link className='navBarLinks' href="#projects">Projects</Nav.Link>
+                        <Nav.Link className='navBarLinks' href="#skills">Skills</Nav.Link>
+                        <Nav.Link className='navBarLinks' href="/contact">
                             <button className="learn-more">
                                 <span className="circle" aria-hidden="true">
                                     <span className="icon arrow"></span>
