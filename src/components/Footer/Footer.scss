@@ -1,8 +1,6 @@
 @import '../../main.scss';
 
 #contact {
-    border-bottom: 1px solid rgb(0, 0, 0);
-    height: 20vh;
     text-align: center;
     position: relative;
     background-color: $primary;
@@ -13,7 +11,7 @@
 }
 .wrapper .icon {
     position: relative;
-    background: rgb(71, 70, 70);
+    background: $secondary;
     border-radius: 50%;
     padding: 15px;
     margin: 10px;

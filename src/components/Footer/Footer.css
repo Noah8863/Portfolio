@@ -1,9 +1,7 @@
 #contact {
-  border-bottom: 1px solid rgb(0, 0, 0);
-  height: 20vh;
   text-align: center;
   position: relative;
-  background-color: #04fe08;
+  background-color: #04009A;
 }
 
 .wrapper {
@@ -13,7 +11,7 @@
 
 .wrapper .icon {
   position: relative;
-  background: rgb(71, 70, 70);
+  background: #77ACF1;
   border-radius: 50%;
   padding: 15px;
   margin: 10px;

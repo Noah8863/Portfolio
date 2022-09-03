@@ -3,7 +3,9 @@
 @mixin transition($property: all, $duration: 1.45s, $ease: cubic-bezier(0.65,0,.076,1)) {
     transition: $property $duration $ease;
 }
-
+.navbar {
+  background-color: $primary;
+}
 button {
     position: relative;
     display: inline-block;
@@ -35,7 +37,6 @@ button {
           top: 0;
           bottom: 0;
           margin: auto;
-          background: $white;
           &.arrow {
             @include transition(all, 0.45s, cubic-bezier(0.65,0,.076,1));
             left: 0.25rem;
@@ -91,4 +92,5 @@ button {
 .navBarLinks {
   position: relative;
   margin: auto;
+  color: $secondary;
 }
