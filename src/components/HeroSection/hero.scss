@@ -1,0 +1,15 @@
+@import '../../main.scss';
+
+.mainContainer {
+    height: 300px;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
+.mainContainer section {
+    scroll-snap-align: start;
+}
+.section{
+    position: relative;
+    background-color: rgb(121, 180, 220);
+    height: 100%;
+}

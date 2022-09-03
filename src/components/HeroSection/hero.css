@@ -1,0 +1,16 @@
+.mainContainer {
+  height: 300px;
+  overflow-y: scroll;
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
+}
+
+.mainContainer section {
+  scroll-snap-align: start;
+}
+
+.section {
+  position: relative;
+  background-color: rgb(121, 180, 220);
+  height: 100%;
+}/*# sourceMappingURL=hero.css.map */

@@ -1,9 +1,11 @@
+@import '../../main.scss';
+
 #contact {
     border-bottom: 1px solid rgb(0, 0, 0);
     height: 20vh;
     text-align: center;
     position: relative;
-    background-color: grey;
+    background-color: $primary;
 }
 .wrapper {
     display: inline-flex;

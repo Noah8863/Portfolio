@@ -1,11 +1,5 @@
 @import "~bootstrap/scss/bootstrap";
-
-$primary: #c6def1;
-$secondary: #2196F3;
-$gray: #ffffff;
-$bg: #f3f8fa;
-$white: #fff;
-
+@import '../../main.scss';
 @mixin transition($property: all, $duration: 1.45s, $ease: cubic-bezier(0.65,0,.076,1)) {
     transition: $property $duration $ease;
 }
