@@ -8,7 +8,13 @@ section {
   scroll-snap-align: start;
 }
 
-.heroContainer {
+#heroContainer {
   height: 100vh;
   background-color: rgb(121, 180, 220);
+}
+
+.test1 {
+  position: relative;
+  background-color: red;
+  top: 6%;
 }/*# sourceMappingURL=hero.css.map */
