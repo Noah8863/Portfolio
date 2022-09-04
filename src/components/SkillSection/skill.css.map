@@ -1,1 +1,1 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"skill.css"}
+{"version":3,"sources":["../../main.scss","skill.css","skill.scss"],"names":[],"mappings":"AAEA;EACI,iCAAA;MAAA,6BAAA;EACA,uBAAA;ACDJ;;ADGA;EACI,wBAAA;ACAJ;;ACJA;EACI,aAAA;EACA,mCAAA;ADOJ","file":"skill.css"}

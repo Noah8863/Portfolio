@@ -1,8 +1,13 @@
 import React from 'react';
+import './project.scss'
 
 function Projects() {
     return (
-        <h1>Oh, Hello There</h1>
+        <div className="projectContainer">
+            <section>
+                <h1>Oh, Hello There</h1>
+            </section>
+        </div>
     )
 }
 

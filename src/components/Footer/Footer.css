@@ -1,7 +1,19 @@
+html {
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+
+section {
+  scroll-snap-align: start;
+}
+
 #contact {
   text-align: center;
   position: relative;
   background-color: #04009A;
+  bottom: 0;
+  height: auto;
 }
 
 .wrapper {

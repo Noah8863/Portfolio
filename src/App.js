@@ -13,8 +13,11 @@ function App() {
       <NavBar />
       <Routes>
         <Route exact path="/"
-          element={<Hero />
-          
+          element={<>
+            <Hero />
+            <Skills />
+            <Projects />
+          </>
           }></Route>
         <Route exact path="/contact" element={<Contact />}></Route>
       </Routes>

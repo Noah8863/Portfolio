@@ -1,16 +1,14 @@
-.mainContainer {
-  height: 300px;
-  overflow-y: scroll;
+html {
   -ms-scroll-snap-type: y mandatory;
       scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
 }
 
-.mainContainer section {
+section {
   scroll-snap-align: start;
 }
 
-.section {
-  position: relative;
+.heroContainer {
+  height: 100vh;
   background-color: rgb(121, 180, 220);
-  height: 100%;
 }/*# sourceMappingURL=hero.css.map */

@@ -1,10 +1,14 @@
 @import "~bootstrap/scss/bootstrap";
 @import '../../main.scss';
+
 @mixin transition($property: all, $duration: 1.45s, $ease: cubic-bezier(0.65,0,.076,1)) {
-    transition: $property $duration $ease;
+  transition: $property $duration $ease;
 }
 .navbar {
   background-color: $primary;
+  position: fixed; 
+  top: 0; 
+  width: 100%; 
 }
 button {
     position: relative;
@@ -19,7 +23,7 @@ button {
     font-size: inherit;
     font-family: inherit;
     &.learn-more {
-      width: 13rem;
+      width: 11.5rem;
       height: auto;
       margin-bottom: 0px;
       .circle {
@@ -78,13 +82,13 @@ button {
         width: 100%;
         .icon {
           &.arrow {
-          background: $white;
+          background: white;
           transform: translate(1rem, 0);
           }
         }
       }
         .button-text {
-        color: $white;
+        color: white;
         }
     }
 }

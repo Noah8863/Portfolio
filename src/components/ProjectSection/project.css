@@ -1,1 +1,14 @@
-/*# sourceMappingURL=project.css.map */
+html {
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+
+section {
+  scroll-snap-align: start;
+}
+
+.projectContainer {
+  height: 100vh;
+  background-color: rgb(74, 132, 74);
+}/*# sourceMappingURL=project.css.map */

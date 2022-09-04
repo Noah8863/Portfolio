@@ -1,1 +1,1 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"project.css"}
+{"version":3,"sources":["../../main.scss","project.css","project.scss"],"names":[],"mappings":"AAEA;EACI,iCAAA;MAAA,6BAAA;EACA,uBAAA;ACDJ;;ADGA;EACI,wBAAA;ACAJ;;ACLA;EACI,aAAA;EACA,kCAAA;ADQJ","file":"project.css"}

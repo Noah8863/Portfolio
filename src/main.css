@@ -1,1 +1,9 @@
-/*# sourceMappingURL=main.css.map */
+html {
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+
+section {
+  scroll-snap-align: start;
+}/*# sourceMappingURL=main.css.map */

@@ -1,3 +1,7 @@
+.navbar {
+  background-color: #04009A;
+}
+
 button {
   position: relative;
   display: inline-block;
@@ -12,18 +16,18 @@ button {
   font-family: inherit;
 }
 button.learn-more {
-  width: 11rem;
+  width: 11.5rem;
   height: auto;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
 }
 button.learn-more .circle {
   transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
   position: relative;
   display: block;
   margin: 0;
-  width: 3rem;
-  height: 3rem;
-  background: #ff0000;
+  width: 2rem;
+  height: 2rem;
+  background: #77ACF1;
   border-radius: 1.625rem;
 }
 button.learn-more .circle .icon {
@@ -32,12 +36,11 @@ button.learn-more .circle .icon {
   top: 0;
   bottom: 0;
   margin: auto;
-  background: #fff;
 }
 button.learn-more .circle .icon.arrow {
   transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-  left: 0.625rem;
-  width: 1.125rem;
+  left: 0.25rem;
+  width: 1rem;
   height: 0.125rem;
   background: none;
 }
@@ -53,15 +56,15 @@ button.learn-more .circle .icon.arrow::before {
   transform: rotate(45deg);
 }
 button.learn-more .button-text {
-  transition: all 1.45s cubic-bezier(0.65, 0, 0.076, 1);
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
   position: absolute;
   top: 0;
-  left: 0;
+  left: 1rem;
   right: 0;
-  bottom: 0;
+  bottom: 1.5rem;
   padding: 0.75rem 0;
-  margin: 0 0 0 1.85rem;
-  color: #ff0000;
+  margin: auto;
+  color: #77ACF1;
   font-weight: 700;
   line-height: 1.6;
   text-align: center;
@@ -71,9 +74,15 @@ button:hover .circle {
   width: 100%;
 }
 button:hover .circle .icon.arrow {
-  background: #fff;
+  background: white;
   transform: translate(1rem, 0);
 }
 button:hover .button-text {
-  color: #fff;
+  color: white;
+}
+
+.navBarLinks {
+  position: relative;
+  margin: auto;
+  color: #77ACF1;
 }/*# sourceMappingURL=Navbar.css.map */
