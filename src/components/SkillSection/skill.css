@@ -10,6 +10,14 @@ section {
 
 .skillContainer {
   height: 100vh;
-  background-color: #3fa3b7;
+  background-color: rgb(63, 163, 183);
 }
-/*# sourceMappingURL=skill.css.map */
+
+.test2 {
+  position: relative;
+  background-color: white;
+  top: 200px;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}/*# sourceMappingURL=skill.css.map */
