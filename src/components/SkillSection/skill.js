@@ -5,7 +5,10 @@ function Skills() {
     return (
         <div className="skillContainer">
             <section>
-                <h1 id="test1">Hello World</h1>
+                <div className="test2">
+                    <h1>Skills</h1>
+                    <h3>Education | Skills</h3>
+                </div>
             </section>
         </div>
     )
