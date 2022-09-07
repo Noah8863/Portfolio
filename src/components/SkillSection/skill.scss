@@ -1,16 +1,39 @@
 @import '../../main.scss';
 
  
-.skillContainer {
+.skillSection {
     height: 100vh;
-    background-color: rgb(63, 163, 183);
 }
-.test2 {
+#skillHeader {
     position: relative;
     background-color: white;
-    top: 200px;
+    top: 60px;
     text-align: center;
     padding-top: 10px;
     padding-bottom: 5px;
 }
-
+#divider {
+    position: relative;
+    width: 100px;
+    background-color: black;
+    height: 3px;
+}
+#skillContainer {
+    position: relative;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: pink;
+    top: 150px;
+    text-align: center;
+    width: auto;
+}
+.skills {
+    background-color: rgb(255, 251, 251);
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.svg {
+    width: 100px;
+}
