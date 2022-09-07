@@ -1,1 +1,10 @@
-{"version":3,"sources":["../../main.scss","project.css","project.scss"],"names":[],"mappings":"AAEA;EACI,iCAAA;MAAA,6BAAA;EACA,uBAAA;ACDJ;;ADGA;EACI,wBAAA;ACAJ;;ACLA;EACI,aAAA;EACA,kCAAA;ADQJ","file":"project.css"}
+{
+    "version": 3,
+    "mappings": "ACEA,AAAA,IAAI,CAAC;EACD,gBAAgB,EAAE,WAAW;EAC7B,eAAe,EAAE,MAAM;CAC1B;;AACD,AAAA,OAAO,CAAC;EACJ,iBAAiB,EAAE,KAAK;CAC3B;;ADND,AAAA,iBAAiB,CAAC;EACd,MAAM,EAAE,KAAK;EACb,gBAAgB,EAAE,OAAgB;CACrC",
+    "sources": [
+        "project.scss",
+        "../../main.scss"
+    ],
+    "names": [],
+    "file": "project.css"
+}
