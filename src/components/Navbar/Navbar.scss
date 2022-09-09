@@ -9,8 +9,9 @@
   position: fixed; 
   top: 0; 
   width: 100%; 
+  
 }
-button {
+#button1 {
     position: relative;
     display: inline-block;
     cursor: pointer;
@@ -92,9 +93,66 @@ button {
         }
     }
 }
-
 .navBarLinks {
   position: relative;
   margin: auto;
   color: $secondary;
+}
+
+
+// Mobile 
+.mobileNavBar {
+  // display: none;
+  position: fixed; 
+}
+main {
+  display: flex;
+  position: fixed;
+}
+
+aside {
+  background-color: #c4a8ff;
+  width: 18.75rem;
+  height: 100vh;
+}
+
+.mobileContainer {
+  margin: 4.5rem 1.4rem;
+}
+
+.btn-container {
+  position: relative;
+  top: 5px;
+}
+
+.mobileContainer a {
+  color: #f9fafb;
+  text-decoration: none;
+  font-size: 1.75rem;
+  font-weight: 600;
+  display: block;
+  margin: 20px;
+}
+
+#mobileBtn {
+  cursor: pointer;
+  margin: 1.25rem;
+  border: none;
+  padding: 0.5rem 1rem;
+  background-color: #f9fafb;
+  position:fixed;
+  top: 10px;
+  display: none;
+}
+
+@media screen and (max-width: 540px) {
+  .navbar {
+    display: none;
+  }
+  .mobileNavBar {
+    display:block;
+  }
+  #mobileBtn {
+    display: block;
+  }
 }

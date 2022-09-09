@@ -15,8 +15,8 @@ function App() {
         <Route exact path="/"
           element={<>
             <Hero />
-            <Skills />
-            <Projects />
+            {/* <Skills /> */}
+            {/* <Projects /> */}
           </>
           }></Route>
         <Route exact path="/contact" element={<Contact />}></Route>
