@@ -2,43 +2,9 @@ import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import { AnimatePresence, motion, useCycle } from "framer-motion";
-
 import './Navbar.scss';
 
-const links = [
-    { name: "Home", to: "#", id: 1 },
-    { name: "About", to: "#", id: 2 },
-    { name: "Blog", to: "#", id: 3 },
-    { name: "Contact", to: "#", id: 4 }
-];
-
-const itemVariants = {
-    closed: {
-        opacity: 0
-    },
-    open: { opacity: 1 }
-};
-
-const sideVariants = {
-    closed: {
-        transition: {
-            staggerChildren: 0.2,
-            staggerDirection: -1
-        }
-    },
-    open: {
-        transition: {
-            staggerChildren: 0.2,
-            staggerDirection: 1
-        }
-    }
-};
-
-
 function NavBar() {
-    const [open, cycleOpen] = useCycle(false, true);
-
     return (
         <nav>
             <Navbar className="navbar" variant="dark">
@@ -61,41 +27,19 @@ function NavBar() {
             </Navbar>
 
             <div className="mobileNavBar">
-                <AnimatePresence>
-                    {open && (
-                        <motion.aside
-                            initial={{ width: 0 }}
-                            animate={{
-                                width: 200
-                            }}
-                            exit={{
-                                width: 10,
-                                transition: { delay: 0.7, duration: 0.5 }
-                            }}
-                        >
-                            <motion.div
-                                className="mobileContainer"
-                                initial="closed"
-                                animate="open"
-                                exit="closed"
-                                variants={sideVariants}
-                            >
-                                {links.map(({ name, to, id }) => (
-                                    <motion.a
-                                        key={id}
-                                        href={to}
-                                        whileHover={{ scale: 1.1 }}
-                                        variants={itemVariants}
-                                    >
-                                        {name}
-                                    </motion.a>
-                                ))}
-                            </motion.div>
-                        </motion.aside>
-                    )}
-                </AnimatePresence>
-                <div className="btn-container">
-                    <button id="mobileBtn"onClick={cycleOpen}>{open ? "Close" : "Open"}</button>
+                <div className="hamburger-menu">
+                    <input id="menu__toggle" type="checkbox" />
+                    <label className="menu__btn" for="menu__toggle">
+                        <span></span>
+                    </label>
+
+                    <ul class="menu__box">
+                        <li><a className="menu__item" href="#">Home</a></li>
+                        <li><a className="menu__item" href="#">About</a></li>
+                        <li><a className="menu__item" href="#">Team</a></li>
+                        <li><a className="menu__item" href="#">Contact</a></li>
+                        <li><a className="menu__item" href="#">Twitter</a></li>
+                    </ul>
                 </div>
             </div>
         </nav>
