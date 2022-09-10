@@ -29,16 +29,15 @@ function NavBar() {
             <div className="mobileNavBar">
                 <div className="hamburger-menu">
                     <input id="menu__toggle" type="checkbox" />
-                    <label className="menu__btn" for="menu__toggle">
+                    <label className="menu__btn" htmlFor="menu__toggle">
                         <span></span>
                     </label>
 
-                    <ul class="menu__box">
+                    <ul className="menu__box">
                         <li><a className="menu__item" href="#">Home</a></li>
-                        <li><a className="menu__item" href="#">About</a></li>
-                        <li><a className="menu__item" href="#">Team</a></li>
-                        <li><a className="menu__item" href="#">Contact</a></li>
-                        <li><a className="menu__item" href="#">Twitter</a></li>
+                        <li><a className="menu__item" href="#skillHeader">Learn my skills</a></li>
+                        <li><a className="menu__item" href="#projectSection">View my projects</a></li>
+                        <li><a className="menu__item" href="/contact">Let's talk</a></li>
                     </ul>
                 </div>
             </div>

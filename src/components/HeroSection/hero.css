@@ -11,7 +11,6 @@ section {
 #heroContainer {
   height: 100vh;
   background-color: rgb(121, 180, 220);
-  z-index: 0;
 }
 
 .test1 {
@@ -19,5 +18,5 @@ section {
   background-color: white;
   top: 60%;
   text-align: center;
-  z-index: 0;
+  z-index: 1;
 }/*# sourceMappingURL=hero.css.map */

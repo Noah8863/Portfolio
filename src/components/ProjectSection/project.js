@@ -30,7 +30,7 @@ function Projects() {
 
     return (
         <div className="projectContainer">
-            <section>
+            <section id="projectSection">
                 <div className="ProjectCarousel">
                     <input type="radio" name="slider" id="item1" onClick={handleBackground} defaultChecked></input>
                     <input type="radio" name="slider" id="item2" onClick={handleBackground} defaultChecked></input>

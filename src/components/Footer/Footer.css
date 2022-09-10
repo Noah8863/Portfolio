@@ -114,7 +114,8 @@ section {
 }
 @media screen and (max-width: 445px) {
   .wrapper .icon {
-    margin: 0%;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 }
 @media screen and (max-width: 400px) {
