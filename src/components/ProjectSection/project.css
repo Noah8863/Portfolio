@@ -1,3 +1,13 @@
+html {
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+
+section {
+  scroll-snap-align: start;
+}
+
 :root {
   --surface-color: #fff;
   --curve: 40;
@@ -9,6 +19,8 @@
 }
 
 .cards {
+  position: relative;
+  top: 300px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;

@@ -1,6 +1,12 @@
 // Main Styles
 
-
+html {
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+}
+section {
+    scroll-snap-align: start;
+}
 $primary: #04009A;
 $secondary: #77ACF1;
 $tertiary: #C0FEFC;

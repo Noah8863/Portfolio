@@ -9,11 +9,13 @@
     height: 100vh;
     background-image: linear-gradient(to top, #5ee7df 0%, #b490ca 100%);
 }
+
 .cards {
+    position: relative;
+    top: 300px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
-    
     padding: 0;
     list-style-type: none;
   }
