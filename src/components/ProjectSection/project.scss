@@ -104,3 +104,26 @@
     -webkit-line-clamp: 3;
     overflow: hidden;
 }
+@media screen and (max-width:400px){
+    .projectContainer {
+        height: 100%;
+    }
+    .cards {
+        position: relative;
+        top: 100px;
+        margin: 0;
+    }
+    .card {
+        height: 60%;
+    }
+    .card__overlay {
+        height: 50px;
+    }
+    .card__title {
+        font-size: 1em;
+    }
+    #project1, #project2, #project3, #project4 {
+        margin: auto;
+        padding: 1em;
+    }
+}
