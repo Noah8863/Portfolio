@@ -8,9 +8,9 @@ function Skills() {
     return (
         <div className="skillSection">
             <section>
-                <div id="skillHeader">
+                {/* <div id="skillHeader">
                     <h1>My Skills</h1>
-                    {/* <div id="divider"> </div> */}
+                    
                 </div>
                 <div id="skillContainer">
                     <div className="skills">
@@ -29,7 +29,7 @@ function Skills() {
                         <p>Git, GitBash, GitHub and VS Code </p>
                     </div>   
                     
-                </div>
+                </div> */}
             </section>
         </div>
     )

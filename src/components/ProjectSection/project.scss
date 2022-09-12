@@ -1,13 +1,19 @@
 @import '../../main.scss';
 
+:root {
+    --surface-color: #fff;
+    --curve: 40;
+}
+
 .projectContainer {
     height: 100vh;
+    background-image: linear-gradient(to top, #5ee7df 0%, #b490ca 100%);
 }
 .cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
-    margin: 4rem 5vw;
+    
     padding: 0;
     list-style-type: none;
   }
@@ -72,13 +78,12 @@
     border-radius: 50%;      
 }  
 .card__title {
-    font-size: 1em;
-    margin: 0 0 .3em;
-    color: #6A515E;
+    font-size: 2em;
+    color: #070707;
 }  
 .card__tagline {
     display: block;
-    margin: 1em 0;
+    margin: 0;
     font-family: "MockFlowFont";  
     font-size: .8em; 
     color: #D7BDCA;  
