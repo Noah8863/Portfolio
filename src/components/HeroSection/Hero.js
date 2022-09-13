@@ -2,6 +2,7 @@ import React from 'react';
 import './hero.scss';
 import Square1 from '../Shapes/Square1/index'
 import Square2 from '../Shapes/Square2/index'
+// import Sphere from '../Shapes/Sphere/index'
 
 function Hero() {
     return (
@@ -13,6 +14,7 @@ function Hero() {
         <div className="shapes">
             <Square1></Square1>
             <Square2></Square2>
+            {/* <Sphere></Sphere> */}
         </div>
         </section>
     );

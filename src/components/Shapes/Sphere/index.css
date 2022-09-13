@@ -1,0 +1,136 @@
+.scene {
+  perspective: 100vh;
+  transform-style: preserve-3d;
+  position: absolute;
+  width: 20vh;
+  height: 20vh;
+  top: 40vh;
+  left: 40vh;
+  border-radius: 50%;
+  background: radial-gradient(circle farthest-corner at 40% 40%, transparent 50%, rgba(0, 0, 8, 0.8) 80%);
+}
+
+.sphere {
+  transform-style: preserve-3d;
+  position: absolute;
+  -webkit-animation: rotate 1s infinite linear;
+          animation: rotate 1s infinite linear;
+  width: 100%;
+  height: 100%;
+  transform-origin: 50% 50%;
+  top: 0;
+  left: 0;
+}
+
+.scene::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  left: 0%;
+  background: radial-gradient(circle farthest-corner at 33% 33%, #eed 0%, rgba(23, 225, 33, 0.8) 80%);
+  border-radius: 50%;
+  transform: scale(1.1) translateZ(-16vh);
+}
+
+.hemisphere {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transform-origin: 50% 50%;
+  transform: rotateX(90deg);
+}
+
+.hemisphere:nth-child(2) {
+  transform: rotateX(-90deg);
+}
+
+.face {
+  position: absolute;
+  width: 10vh;
+  height: 10vh;
+  background: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1) 8%, rgb(19, 221, 218) 19%, white, transparent 51%);
+  transform-style: preserve-3d;
+  transform-origin: 50% 0;
+  top: 50%;
+  left: 5vh;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.face::before,
+.face::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  box-sizing: border-box;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.face::before {
+  width: 50%;
+  height: 50%;
+  top: 25%;
+  left: 25%;
+  border: 12px solid #333;
+  background: rgba(255, 255, 255, 0.3);
+  transform: translateZ(0.45vh);
+}
+
+.face::after {
+  width: 20%;
+  height: 20%;
+  top: 40%;
+  left: 40%;
+  background: rgba(0, 0, 0, 0.2);
+  transform: translateZ(0.7vh);
+}
+
+.face:nth-child(1) {
+  transform: translateZ(-10.4vh) rotateZ(36deg) translateY(-1.7vh) rotateX(143deg);
+}
+
+.face:nth-child(2) {
+  transform: translateZ(-10.4vh) rotateZ(108deg) translateY(-1.7vh) rotateX(143deg);
+}
+
+.face:nth-child(3) {
+  transform: translateZ(-10.4vh) rotateZ(180deg) translateY(-1.7vh) rotateX(143deg);
+}
+
+.face:nth-child(4) {
+  transform: translateZ(-10.4vh) rotateZ(252deg) translateY(-1.7vh) rotateX(143deg);
+}
+
+.face:nth-child(5) {
+  transform: translateZ(-10.4vh) rotateZ(-36deg) translateY(-1.7vh) rotateX(143deg);
+}
+
+.face:nth-child(6) {
+  transform: translateZ(-6.7vh) rotateZ(36deg) translateY(-8.3vh) rotateX(100deg);
+}
+
+.face:nth-child(7) {
+  transform: translateZ(-6.7vh) rotateZ(108deg) translateY(-8.3vh) rotateX(100deg);
+}
+
+.face:nth-child(8) {
+  transform: translateZ(-6.7vh) rotateZ(180deg) translateY(-8.3vh) rotateX(100deg);
+}
+
+.face:nth-child(9) {
+  transform: translateZ(-6.7vh) rotateZ(252deg) translateY(-8.3vh) rotateX(100deg);
+}
+
+.face:nth-child(10) {
+  transform: translateZ(-6.7vh) rotateZ(-36deg) translateY(-8.3vh) rotateX(100deg);
+}
+
+.face:nth-child(11) {
+  transform: translateZ(-6.7vh) rotateZ(36deg) translateY(-8.3vh) rotateX(100deg);
+}/*# sourceMappingURL=index.css.map */
