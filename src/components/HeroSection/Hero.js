@@ -1,17 +1,9 @@
 import React from 'react';
 import './hero.scss';
-import { useRef } from "react";
-import { useAnimationFrame } from "framer-motion";
+import Square1 from '../Shapes/Square1/index'
+import Square2 from '../Shapes/Square2/index'
 
 function Hero() {
-    const ref = useRef(null);
-
-    useAnimationFrame((t) => {
-        const rotate = Math.sin(t / 10000) * 200;
-        const y = (1 + Math.sin(t / 1000)) * -50;
-        ref.current.style.transform = `translateY(${y}px) rotateX(${rotate}deg) rotateY(${rotate}deg)`;
-    });
-
     return (
         <section id="heroContainer">
         <div className="test1">
@@ -19,14 +11,8 @@ function Hero() {
             <p>Anything in this container will not be effected by the navbar</p>
         </div>
         <div className="shapes">
-            <div className="cube" ref={ref}>
-                <div className="side front" />
-                <div className="side left" />
-                <div className="side right" />
-                <div className="side top" />
-                <div className="side bottom" />
-                <div className="side back" />
-            </div>
+            <Square1></Square1>
+            <Square2></Square2>
         </div>
         </section>
     );

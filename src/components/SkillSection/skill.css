@@ -1,3 +1,13 @@
+html {
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+
+section {
+  scroll-snap-align: start;
+}
+
 .skillSection {
   height: 100vh;
   background-image: linear-gradient(to bottom, #5ee7df 0%, #b490ca 100%);
