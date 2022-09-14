@@ -35,7 +35,7 @@ function NavBar() {
 
                     <ul className="menu__box">
                         <li><a className="menu__item" href="#">Home</a></li>
-                        <li><a className="menu__item" href="#skillHeader">Learn my skills</a></li>
+                        <li><a className="menu__item" href="#skillSection">Learn my skills</a></li>
                         <li><a className="menu__item" href="#projectSection">View my projects</a></li>
                         <li><a className="menu__item" href="/contact">Let's talk</a></li>
                     </ul>
