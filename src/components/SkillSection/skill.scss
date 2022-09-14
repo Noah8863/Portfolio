@@ -22,7 +22,21 @@
     height: 225px;
     margin: 5px auto;
 }
-
+.frontEnd, .server {
+    display: grid;
+    grid-template-columns: 60% auto;
+}
+.backEnd, .tools {
+    display: grid;
+    grid-template-columns:40% auto;
+}
+.leftContainerDetails, .rightContainerDetails {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
 .leftSkills {
     position: relative;
     display: flex;
