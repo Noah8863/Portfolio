@@ -1,37 +1,47 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './skill.scss'
-import FrontEnd from '../../SVG/front-end.png'
-import BackEnd from '../../SVG/ux-design.png'
-import Tools from '../../SVG/management-service.png'
+import { animationControls, motion } from 'framer-motion';
 
 function Skills() {
+
+    async function sequence(){
+        await animationControls.start({ x: '-100vw'});
+        await animationControls.start({ x: 0});
+        await animationControls.start({x: '-50px'});
+    }
+
+    useEffect(() => {
+        sequence();
+      }, []);
+
     return (
-        <div className="skillSection">
-            <section>
-                {/* <div id="skillHeader">
-                    <h1>My Skills</h1>
-                    
+        <section className="skillSection">
+            <div className="skillContainer">
+                <div className="parent">
+                <h1 style={{textAlign: 'center'}}>Full Stack Developer</h1>
+                    <div className="frontEnd">
+                        <motion.div className="leftSkills" animate={animationControls} transition={{ duration:0.5, delay: .5}}>
+                            <h2>Front End Developer</h2>
+                        </motion.div>
+                    </div>
+                    <div className="backEnd">
+                        <motion.div className="rightSkills" initial={{ x: '100vw'}} animate={{ x: 0}} transition={{duration:0.5, delay: .5}}>
+                            <h2>Back End Developer</h2>
+                        </motion.div>
+                    </div>
+                    <div className="server">
+                        <motion.div className="leftSkills" initial={{ x: '-100vw'}} animate={{ x: 0}} transition={{duration:0.5, delay: .5}}>
+                            <h2>Databases</h2>
+                        </motion.div>
+                    </div>
+                    <div className="tools">
+                        <motion.div className="rightSkills" initial={{ x: '100vw'}} animate={{ x: 0}} transition={{duration:0.5, delay: .5}}>
+                            <h2>Tools</h2>
+                        </motion.div>
+                    </div>
                 </div>
-                <div id="skillContainer">
-                    <div className="skills">
-                        <img className="svg" src={FrontEnd} alt={FrontEnd} />
-                        <h4>Front-End Development</h4>
-                        <p>Web Design tools such as HTML, CSS,SCSS, Javascript and React.js</p>
-                    </div>
-                    <div className="skills">
-                        <img className="svg" src={BackEnd} alt={BackEnd} />
-                        <h4>Back-End Development</h4>
-                        <p>Server side tools such as Express, Node.js, MongoDB, SQL, NoSQL and OOP </p>
-                    </div>
-                    <div className="skills">
-                        <img className="svg" src={Tools} alt={Tools} />
-                        <h4>Web Dev Tools</h4>
-                        <p>Git, GitBash, GitHub and VS Code </p>
-                    </div>   
-                    
-                </div> */}
-            </section>
-        </div>
+            </div>
+        </section>
     )
 }
 

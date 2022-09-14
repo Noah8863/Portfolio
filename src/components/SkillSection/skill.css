@@ -13,40 +13,60 @@ section {
   background-image: linear-gradient(to bottom, #5ee7df 0%, #b490ca 100%);
 }
 
-#skillHeader {
+.skillContainer {
   position: relative;
+  display: flex;
+  top: 5%;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.parent {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.frontEnd, .backEnd, .server, .tools {
+  width: 100%;
+  height: 225px;
+  margin: 5px auto;
+}
+
+.leftSkills {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: white;
-  top: 60px;
-  text-align: center;
-  padding-top: 10px;
-  padding-bottom: 5px;
+  height: 100%;
+  width: 50%;
+  margin: auto;
 }
 
-#divider {
+.rightSkills {
   position: relative;
-  width: 100px;
-  background-color: black;
-  height: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  height: 100%;
+  width: 50%;
+  margin: auto;
 }
 
-#skillContainer {
-  position: relative;
-  display: grid;
-  grid-template-columns: auto auto auto;
-  background-color: pink;
-  top: 150px;
-  text-align: center;
-  width: auto;
-}
-
-.skills {
-  background-color: rgb(255, 251, 251);
-  margin-left: 5px;
-  margin-right: 5px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-.svg {
-  width: 100px;
+@media screen and (max-width: 425px) {
+  .skillContainer {
+    top: 80px;
+  }
+  .parent {
+    height: 90vh;
+  }
+  .leftSkills, .rightSkills {
+    width: 100%;
+  }
+  .frontEnd, .backEnd, .server, .tools {
+    height: 20%;
+  }
 }/*# sourceMappingURL=skill.css.map */
