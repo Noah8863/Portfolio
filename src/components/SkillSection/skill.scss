@@ -2,7 +2,10 @@
 
 .skillSection {
     height: 100vh;
-    background-image: linear-gradient(to bottom, #5ee7df 0%, #b490ca 100%);
+    // background-image: linear-gradient(to bottom, #5ee7df 0%, #b490ca 100%);
+    background: #0F2027;
+    background: -webkit-linear-gradient(to top, #2C5364, #203A43, #0F2027);
+    background: linear-gradient(to top, #2C5364, #203A43, #0F2027);
 }
 .skillDesktopContainer {
     position: relative;
@@ -11,6 +14,7 @@
     justify-content: center;
     align-items: center;
     margin: auto;
+    color: white;
 }
 .parent {
     position: relative;
@@ -21,6 +25,7 @@
     width: 100%;
     height: 225px;
     margin: 5px auto;
+    color: black;
 }
 .frontEnd, .server {
     display: grid;
@@ -36,6 +41,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+    color: white;
 }
 .leftSkills {
     position: relative;

@@ -1,15 +1,33 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import './skill.scss'
 import { useAnimation, motion } from 'framer-motion';
 
 
 export default function Skills() {
+    const sectionRef = useRef();
+    useEffect(() => {
+        const observer = new IntersectionObserver((entries) => {
+            const entry = entries[0];
+            leftSequence();
+            rightSequence();
+            leftChildrenDescription();
+            rightChildrenDescription();
+            leftMobileSequence();
+            rightMobileSequence();
+        })
+        observer.observe(sectionRef.current)
+    })
+
+    const FadeIn = useAnimation();
 
     const leftContainer = useAnimation();
     const rightContainer = useAnimation();
+    const leftDescription = useAnimation();
+    const rightDescription = useAnimation();
 
     const leftMobileContainer = useAnimation();
     const rightMobileContainer = useAnimation();
+
 
     //This is the initial position of each skill container
     const leftContainerStart = {
@@ -27,20 +45,8 @@ export default function Skills() {
     // All the desktop animation sequences after the initial position has been executed
     async function leftSequence() {
         await leftContainer.start({ x: '100vw', });
-        await leftContainer.start({
-            x: 410,
-            transition: {
-                type: 'spring',
-                stiffness: 20
-            }
-        });
-        await leftContainer.start({
-            x: '-10vw',
-            transition: {
-                delay: 0.8,
-                duration: 1.5
-            }
-        });
+        await leftContainer.start({ x: 410, transition: { type: 'spring', stiffness: 20 } })
+        await leftContainer.start({ x: '-10vw', transition: { delay: 0.8, duration: 1.5 } })
     }
 
     useEffect(() => {
@@ -49,136 +55,73 @@ export default function Skills() {
 
     async function rightSequence() {
         await rightContainer.start({ x: '-100vw' });
-        await rightContainer.start({
-            x: -400,
-            transition: {
-                type: 'spring',
-                stiffness: 20
-            }
-        });
-        await rightContainer.start({
-            x: '10vw',
-            transition: {
-                delay: 0.8,
-                duration: 1.5
-            }
-        });
-    }
+        await rightContainer.start({ x: -400, transition: { type: 'spring', stiffness: 20 } })
+        await rightContainer.start({ x: '10vw', transition: { delay: 0.8, duration: 1.5 } })
+    };
 
     useEffect(() => {
         rightSequence();
     }, []);
 
 
-    // All the mobile animation sequences
 
+    // All the mobile animation sequences
     async function leftMobileSequence() {
         await leftMobileContainer.start({ x: '-100vw', height: 110 });
-        await leftMobileContainer.start({
-            x: 0,
-            transition: {
-                type: 'spring',
-                stiffness: 20
-            }
-        });
-        await leftMobileContainer.start({
-            y: -30,
-            height: 60, 
-            transition: {
-                delay: 0.8,
-                duration: 1.5
-            }
-        });
-    }
-
+        await leftMobileContainer.start({ x: 0, transition: { type: 'spring', stiffness: 20 } })
+        await leftMobileContainer.start({ y: -30, height: 60, transition: { delay: 0.8, duration: 1.5 } })
+    };
     useEffect(() => {
         leftMobileSequence();
     }, []);
 
     async function rightMobileSequence() {
-        await rightMobileContainer.start({ x: '100vw', height: 110});
-        await rightMobileContainer.start({
-            x: 0,
-            transition: {
-                type: 'spring',
-                stiffness: 20
-            }
-        });
-        await rightMobileContainer.start({
-            y: -30,
-            height: 80, 
-            transition: {
-                delay: 0.8,
-                duration: 1.5
-            }
-        });
-    }
+        await rightMobileContainer.start({ x: '100vw', height: 110 });
+        await rightMobileContainer.start({ x: 0, transition: { type: 'spring', stiffness: 2 } });
+        await rightMobileContainer.start({ y: -30, height: 60, transition: { delay: 0.8, duration: 1.5 } })
+    };
 
     useEffect(() => {
         rightMobileSequence();
     }, []);
 
+
+
     //Fade in effect using variants so I can reuse them later
-    const FadeInVariants = {
-        hidden: {
-            opacity: 0
-        },
-        visible: {
-            opacity: 1,
-            transition: {
-                delay: 2.3,
-                duration: 1.5
-            }
-        }
+    async function Fade() {
+        await FadeIn.start({ opacity: 0 });
+        await FadeIn.start({ opacity: 1, transition: { delay: 2.3, duration: 1.5 } });
     }
 
-    // Children animation for each skill details 
-    const nextLeftVariants = {
-        hidden: {
-            opacity: 0,
-            x: '-40vw'
-        },
-        visible: {
-            opacity: 1,
-            x: '-5vw',
-            transition: {
-                delay: 4.2,
-                duration: 2
-            }
-        }
+    // Children animation for each skill details
+    async function leftChildrenDescription() {
+        await leftDescription.start({ opacity: 0, x: '-40vw' })
+        await leftDescription.start({ opacity: 1, x: '-5vw', transition: { delay: 4.2, duration: 2 } })
     }
 
-    const nextRightVariants = {
-        hidden: {
-            opacity: 0,
-            x: '100 vw'
-        },
-        visible: {
-            opacity: 1,
-            x: '10vw',
-            transition: {
-                delay: 4.2,
-                duration: 2
-            }
-        }
+    async function rightChildrenDescription() {
+        await rightDescription.start({ opacity: 0, x: '100vw' })
+        await rightDescription.start({ opacity: 1, x: '10vw', transition: { delay: 4.2, duration: 2 } })
     }
+
+
     return (
-        <section id="skillSection" className="skillSection">
-            <div className="skillDesktopContainer">
+        <motion.section id="skillSection" className="skillSection">
+            <div ref={sectionRef} className="skillDesktopContainer">
                 <div className="parent">
-                    <motion.h1 style={{ textAlign: 'center' }} variants={FadeInVariants} initial="hidden" animate="visible">Full Stack Developer</motion.h1>
+                    <motion.h1 style={{ textAlign: 'center' }} initial="hidden" animate={FadeIn}>Full Stack Developer</motion.h1>
 
                     <div className="frontEnd">
                         <motion.div className="leftSkills" variants={leftContainerStart} initial="hidden" animate={leftContainer}>
                             <h2>Front End Developement</h2>
                         </motion.div>
-                        <motion.div className="leftContainerDetails" variants={nextLeftVariants} initial="hidden" animate="visible">
+                        <motion.div className="leftContainerDetails" initial="hidden" animate={leftDescription}>
                             <h3>HTML | CSS | SCSS | JavaScript | React | Framer-Motion | JSX</h3>
                         </motion.div>
                     </div>
 
                     <div className="backEnd">
-                        <motion.div className="rightContainerDetails" variants={nextRightVariants} initial="hidden" animate="visible">
+                        <motion.div className="rightContainerDetails" initial="hidden" animate={rightDescription}>
                             <h3> Express | Node.js | jQuery | JavaScript | Restful API's</h3>
                         </motion.div>
                         <motion.div className="rightSkills" variants={rightContainerStart} initial="hidden" animate={rightContainer}>
@@ -190,13 +133,13 @@ export default function Skills() {
                         <motion.div className="leftSkills" variants={leftContainerStart} initial="hidden" animate={leftContainer}>
                             <h2>Databases</h2>
                         </motion.div>
-                        <motion.div className="leftContainerDetails" variants={nextLeftVariants} initial="hidden" animate="visible">
+                        <motion.div className="leftContainerDetails" initial="hidden" animate={leftDescription}>
                             <h3>SQL | NoSQL | MongoDB | Mongoose | GraphQL </h3>
                         </motion.div>
                     </div>
 
                     <div className="tools">
-                        <motion.div className="rightContainerDetails" variants={nextRightVariants} initial="hidden" animate="visible">
+                        <motion.div className="rightContainerDetails" initial="hidden" animate={rightDescription}>
                             <h3> Git | GitHub | VS Code | Zsh/Bash | Netlify | Jest | Webpack | Heroku</h3>
                         </motion.div>
                         <motion.div className="rightSkills" variants={rightContainerStart} initial="hidden" animate={rightContainer}>
@@ -233,6 +176,6 @@ export default function Skills() {
                 </div>
 
             </div>
-        </section>
+        </motion.section>
     )
 }
