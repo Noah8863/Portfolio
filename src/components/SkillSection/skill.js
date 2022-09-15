@@ -8,10 +8,12 @@ export default function Skills() {
     useEffect(() => {
         const observer = new IntersectionObserver((entries) => {
             const entry = entries[0];
+            Fade();
             leftSequence();
             rightSequence();
             leftChildrenDescription();
             rightChildrenDescription();
+            backdropSequence();
             leftMobileSequence();
             rightMobileSequence();
         })
@@ -28,7 +30,7 @@ export default function Skills() {
     const leftMobileContainer = useAnimation();
     const rightMobileContainer = useAnimation();
 
-
+    const backdrop = useAnimation();
     //This is the initial position of each skill container
     const leftContainerStart = {
         hidden: {
@@ -39,6 +41,12 @@ export default function Skills() {
     const rightContainerStart = {
         hidden: {
             x: '-100vw'
+        }
+    }
+
+    const backdropStart = {
+        hidden: {
+            opacity: 0
         }
     }
 
@@ -63,7 +71,14 @@ export default function Skills() {
         rightSequence();
     }, []);
 
+    async function backdropSequence() {
+        await backdrop.start({opacity:1, transition: {type: 'tween', stiffness: 5, delay: 3}});
+        await backdrop.start({left: '0%', width: '100%', height: '100vh', transition: {delay:1.2, duration: 1.5}})
+    }
 
+    useEffect(() => {
+        backdropSequence();
+    }, []);
 
     // All the mobile animation sequences
     async function leftMobileSequence() {
@@ -107,6 +122,7 @@ export default function Skills() {
 
     return (
         <motion.section id="skillSection" className="skillSection">
+            <motion.div className="backdropContainer" variants={backdropStart} initial="hidden" animate={backdrop}></motion.div>
             <div ref={sectionRef} className="skillDesktopContainer">
                 <div className="parent">
                     <motion.h1 style={{ textAlign: 'center' }} initial="hidden" animate={FadeIn}>Full Stack Developer</motion.h1>

@@ -3,14 +3,12 @@
 .skillSection {
     height: 100vh;
     // background-image: linear-gradient(to bottom, #5ee7df 0%, #b490ca 100%);
-    background: #0F2027;
-    background: -webkit-linear-gradient(to top, #2C5364, #203A43, #0F2027);
-    background: linear-gradient(to top, #2C5364, #203A43, #0F2027);
+    overflow-x: hidden;
 }
 .skillDesktopContainer {
     position: relative;
     display: flex;
-    top: 6%;
+    top: 5%;
     justify-content: center;
     align-items: center;
     margin: auto;
@@ -20,6 +18,14 @@
     position: relative;
     width: 100%;
     height: auto;    
+}
+.backdropContainer {
+    top: 105%;
+    width: 30%;
+    height: 90%;
+    left: 35%;
+    position: absolute;
+    background: linear-gradient(to top, #2C5364, #203A43, #0F2027);
 }
 .frontEnd, .backEnd, .server, .tools {
     width: 100%;
