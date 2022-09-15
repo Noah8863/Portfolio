@@ -4,10 +4,10 @@
     height: 100vh;
     background-image: linear-gradient(to bottom, #5ee7df 0%, #b490ca 100%);
 }
-.skillContainer {
+.skillDesktopContainer {
     position: relative;
     display: flex;
-    top: 5%;
+    top: 6%;
     justify-content: center;
     align-items: center;
     margin: auto;
@@ -58,9 +58,21 @@
     margin: auto;
 }
 
+// ====== Mobile Responsive Animations ====== //
+
+.skillMobileContainer {
+    display: none;
+    position: relative;
+    top: 10%;
+    height: 90%;
+}
+
 @media screen and (max-width:425px){
-    .skillContainer {
-        top: 80px;
+    .skillDesktopContainer {
+        display: none;
+    }
+    .skillMobileContainer {
+        display: grid;
     }
     .parent {
         height: 90vh;
@@ -69,6 +81,7 @@
         width: 100%;
     }
     .frontEnd, .backEnd, .server, .tools {
-        height: 20%;
+        display: flex;
+        height: 15%;
     }
 }
