@@ -73,7 +73,7 @@ export default function Skills() {
 
     async function backdropSequence() {
         await backdrop.start({opacity:1, transition: {type: 'tween', stiffness: 5, delay: 3}});
-        await backdrop.start({left: '0%', width: '100%', height: '100vh', transition: {delay:1.2, duration: 1.5}})
+        await backdrop.start({left: '0%', width: '100%', transition: {delay:1.2, duration: 1.5}})
     }
 
     useEffect(() => {
@@ -92,7 +92,7 @@ export default function Skills() {
 
     async function rightMobileSequence() {
         await rightMobileContainer.start({ x: '100vw', height: 110 });
-        await rightMobileContainer.start({ x: 0, transition: { type: 'spring', stiffness: 2 } });
+        await rightMobileContainer.start({ x: 0, transition: { type: 'spring', stiffness: 20 } });
         await rightMobileContainer.start({ y: -30, height: 60, transition: { delay: 0.8, duration: 1.5 } })
     };
 
@@ -111,12 +111,12 @@ export default function Skills() {
     // Children animation for each skill details
     async function leftChildrenDescription() {
         await leftDescription.start({ opacity: 0, x: '-40vw' })
-        await leftDescription.start({ opacity: 1, x: '-5vw', transition: { delay: 4.2, duration: 2 } })
+        await leftDescription.start({ opacity: 1, x: '-20vw', transition: { delay: 4.2, duration: 2 } })
     }
 
     async function rightChildrenDescription() {
-        await rightDescription.start({ opacity: 0, x: '100vw' })
-        await rightDescription.start({ opacity: 1, x: '10vw', transition: { delay: 4.2, duration: 2 } })
+        await rightDescription.start({ opacity: 0, x: '30vw' })
+        await rightDescription.start({ opacity: 1, x: '20vw', transition: { delay: 4.2, duration: 1.8 } })
     }
 
 
