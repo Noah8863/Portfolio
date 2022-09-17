@@ -1,8 +1,7 @@
 @import '../../main.scss';
 
 .skillSection {
-    height: 100vh;
-    // background-image: linear-gradient(to bottom, #5ee7df 0%, #b490ca 100%);
+    height: 100%;
     overflow-x: hidden;
 }
 .skillDesktopContainer {
@@ -13,19 +12,16 @@
     align-items: center;
     margin: auto;
     color: white;
+    background: linear-gradient(to top, #2C5364, #203A43, #0F2027);
 }
 .parent {
     position: relative;
     width: 100%;
     height: auto;    
 }
-.backdropContainer {
-    top: 105%;
-    width: 40%;
-    height: 100vh;
-    left: 30%;
-    position: absolute;
-    background: linear-gradient(to top, #2C5364, #203A43, #0F2027);
+#fullStack {
+    position: relative;
+    top: 80px;
 }
 .frontEnd, .backEnd, .server, .tools {
     position: relative;
@@ -35,6 +31,7 @@
     color: black;
     text-align: center;
 }
+
 .frontEnd, .server {
     display: grid;
     grid-template-columns: 60% auto;
@@ -60,6 +57,7 @@
     height: 100%;
     width: 50%;
     margin: auto;
+    
 }
 .rightSkills {
     position: relative;
@@ -79,9 +77,13 @@
     position: relative;
     top: 10%;
     height: 90%;
+    background: linear-gradient(to top, #2C5364, #203A43, #0F2027);
 }
 
 @media screen and (max-width:425px){
+    .skillSection {
+        height: 100vh;
+    }
     .skillDesktopContainer {
         display: none;
     }

@@ -13,7 +13,6 @@ export default function Skills() {
             rightSequence();
             leftChildrenDescription();
             rightChildrenDescription();
-            backdropSequence();
             leftMobileSequence();
             rightMobileSequence();
         })
@@ -30,7 +29,6 @@ export default function Skills() {
     const leftMobileContainer = useAnimation();
     const rightMobileContainer = useAnimation();
 
-    const backdrop = useAnimation();
     //This is the initial position of each skill container
     const leftContainerStart = {
         hidden: {
@@ -44,11 +42,6 @@ export default function Skills() {
         }
     }
 
-    const backdropStart = {
-        hidden: {
-            opacity: 0
-        }
-    }
 
     // All the desktop animation sequences after the initial position has been executed
     async function leftSequence() {
@@ -71,14 +64,6 @@ export default function Skills() {
         rightSequence();
     }, []);
 
-    async function backdropSequence() {
-        await backdrop.start({opacity:1, transition: {type: 'tween', stiffness: 5, delay: 3}});
-        await backdrop.start({left: '0%', width: '100%', transition: {delay:1.2, duration: 1.5}})
-    }
-
-    useEffect(() => {
-        backdropSequence();
-    }, []);
 
     // All the mobile animation sequences
     async function leftMobileSequence() {
@@ -122,14 +107,12 @@ export default function Skills() {
 
     return (
         <motion.section id="skillSection" className="skillSection">
-            <motion.div className="backdropContainer" variants={backdropStart} initial="hidden" animate={backdrop}></motion.div>
             <div ref={sectionRef} className="skillDesktopContainer">
                 <div className="parent">
-                    <motion.h1 style={{ textAlign: 'center' }} initial="hidden" animate={FadeIn}>Full Stack Developer</motion.h1>
-
+                    <motion.h1 style={{ textAlign: 'center' }} id="fullStack" initial="hidden" animate={FadeIn}>Full Stack Developer</motion.h1>
                     <div className="frontEnd">
                         <motion.div className="leftSkills" variants={leftContainerStart} initial="hidden" animate={leftContainer}>
-                            <h2>Front End Developement</h2>
+                            <h1 style={{ fontWeight: 'bold'}}>Front End Developement</h1>
                         </motion.div>
                         <motion.div className="leftContainerDetails" initial="hidden" animate={leftDescription}>
                             <h3>HTML | CSS | SCSS | JavaScript | React | Framer-Motion | JSX</h3>
@@ -141,13 +124,13 @@ export default function Skills() {
                             <h3> Express | Node.js | jQuery | JavaScript | Restful API's</h3>
                         </motion.div>
                         <motion.div className="rightSkills" variants={rightContainerStart} initial="hidden" animate={rightContainer}>
-                            <h2>Back End Developement</h2>
+                            <h1 style={{ fontWeight: 'bold'}}>Back End Developement</h1>
                         </motion.div>
                     </div>
 
                     <div className="server">
                         <motion.div className="leftSkills" variants={leftContainerStart} initial="hidden" animate={leftContainer}>
-                            <h2>Databases</h2>
+                            <h1 style={{ fontWeight: 'bold'}}>Databases</h1>
                         </motion.div>
                         <motion.div className="leftContainerDetails" initial="hidden" animate={leftDescription}>
                             <h3>SQL | NoSQL | MongoDB | Mongoose | GraphQL </h3>
@@ -159,7 +142,7 @@ export default function Skills() {
                             <h3> Git | GitHub | VS Code | Zsh/Bash | Netlify | Jest | Webpack | Heroku</h3>
                         </motion.div>
                         <motion.div className="rightSkills" variants={rightContainerStart} initial="hidden" animate={rightContainer}>
-                            <h2>Tools</h2>
+                            <h1 style={{ fontWeight: 'bold'}}>Tools</h1>
                         </motion.div>
                     </div>
                 </div>
