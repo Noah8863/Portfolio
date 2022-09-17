@@ -124,13 +124,13 @@ export default function Skills() {
                             <h3> Express | Node.js | jQuery | JavaScript | Restful API's</h3>
                         </motion.div>
                         <motion.div className="rightSkills" variants={rightContainerStart} initial="hidden" animate={rightContainer}>
-                            <h1 style={{ fontWeight: 'bold'}}>Back End Developement</h1>
+                            <h1 id="backEndText" style={{ fontWeight: 'bold'}}>Back End Developement</h1>
                         </motion.div>
                     </div>
 
                     <div className="server">
                         <motion.div className="leftSkills" variants={leftContainerStart} initial="hidden" animate={leftContainer}>
-                            <h1 style={{ fontWeight: 'bold'}}>Databases</h1>
+                            <h1 id="databaseText" style={{ fontWeight: 'bold'}}>Databases</h1>
                         </motion.div>
                         <motion.div className="leftContainerDetails" initial="hidden" animate={leftDescription}>
                             <h3>SQL | NoSQL | MongoDB | Mongoose | GraphQL </h3>
@@ -142,7 +142,7 @@ export default function Skills() {
                             <h3> Git | GitHub | VS Code | Zsh/Bash | Netlify | Jest | Webpack | Heroku</h3>
                         </motion.div>
                         <motion.div className="rightSkills" variants={rightContainerStart} initial="hidden" animate={rightContainer}>
-                            <h1 style={{ fontWeight: 'bold'}}>Tools</h1>
+                            <h1 id="toolsText" style={{ fontWeight: 'bold'}}>Tools</h1>
                         </motion.div>
                     </div>
                 </div>

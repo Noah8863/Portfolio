@@ -1,5 +1,6 @@
 @import '../../main.scss';
 
+
 .skillSection {
     height: 100%;
     overflow-x: hidden;
@@ -53,21 +54,27 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: white;
     height: 100%;
     width: 50%;
     margin: auto;
-    
+    font-size: 72px;
+    background: -webkit-linear-gradient(#eee, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
+
 .rightSkills {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: white;
     height: 100%;
     width: 50%;
     margin: auto;
+    background: -webkit-linear-gradient(#eee, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
 }
 
 // ====== Mobile Responsive Animations ====== //
