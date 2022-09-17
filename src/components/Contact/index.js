@@ -18,7 +18,7 @@ function Contact() {
     emailjs
       .send(
         "service_32wky28",
-        "template_s77x9a4",
+        "template_6f7vqrr",
         formData,
         "nIOQ4DjOD6VPrQRy0"
       )
@@ -39,13 +39,13 @@ function Contact() {
           <input className="inputfield" id="name" placeholder="Write your name here.."></input>
         </p>
         <p type="Email:">
-          <input className="inputfield" placeholder="Let us know how to contact you back.."></input>
+          <input className="inputfield" id="email" placeholder="Write your email here.."></input>
         </p>
         <p type="Message:">
-          <input className="inputfield" placeholder="What would you like to tell us.."></input>
+          <input className="inputfield" id="subject" placeholder="Write the subject here.."></input>
         </p>
         <p type="Message:">
-          <input className="inputfield" placeholder="What would you like to tell us.."></input>
+          <input className="inputfield" id="message" placeholder="What would you like to talk about?"></input>
         </p>
         <button id="btn">Send Message</button>
       </form>
