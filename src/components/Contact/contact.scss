@@ -1,6 +1,7 @@
 @import "../../main.scss";
+
 body {
-  background: linear-gradient(to bottom, #2c5364, #203a43, #0f2027);
+    background: linear-gradient(to bottom, #2c5364, #203a43, #0f2027);
 }
 .inputContainer {
   width: 60%;
@@ -53,15 +54,20 @@ body {
   transition: all 0.3s;
 }
 #btn:hover {
-  background: #78788c;
+  background: #203a43;
   color: #fff;
 }
 
-#contact {
+#contactContainer {
     margin-top: 10px;
     background: none;
 }
-.wrapper .icon {
+.socialMediaBtns {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+.socialMediaBtns .icons {
   position: relative;
   background: #203a43;
   border-radius: 50%;
@@ -78,7 +84,7 @@ body {
   cursor: pointer;
   transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
-.wrapper .tooltip {
+.socialMediaBtns .tooltips {
   position: absolute;
   top: 0;
   font-size: 14px;
@@ -92,7 +98,7 @@ body {
   transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
-.wrapper .tooltip::before {
+.socialMediaBtns .tooltips::before {
   position: absolute;
   content: "";
   height: 8px;
@@ -104,32 +110,32 @@ body {
   transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
-.wrapper .icon:hover .tooltip {
+.socialMediaBtns .icons:hover .tooltips {
   top: -45px;
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
 }
-.wrapper .icon:hover span,
-.wrapper .icon:hover .tooltip {
+.socialMediaBtns .icons:hover span,
+.socialMediaBtns .icons:hover .tooltips {
   text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
 }
 
-.wrapper .github:hover,
-.wrapper .github:hover .tooltip,
-.wrapper .github:hover .tooltip::before {
+.socialMediaBtns .github:hover,
+.socialMediaBtns .github:hover .tooltips,
+.socialMediaBtns .github:hover .tooltips::before {
   background: #5e1d94;
   color: #ffffff;
 }
-.wrapper .linkedin:hover,
-.wrapper .linkedin:hover .tooltip,
-.wrapper .linkedin:hover .tooltip::before {
+.socialMediaBtns .linkedin:hover,
+.socialMediaBtns .linkedin:hover .tooltips,
+.socialMediaBtns .linkedin:hover .tooltips::before {
   background: #1c6894;
   color: #ffffff;
 }
-.wrapper .resume:hover,
-.wrapper .resume:hover .tooltip,
-.wrapper .resume:hover .tooltip::before {
+.socialMediaBtns .resume:hover,
+.socialMediaBtns .resume:hover .tooltips,
+.socialMediaBtns .resume:hover .tooltips::before {
   background: #7d7e7e;
   color: #ffffff;
 }

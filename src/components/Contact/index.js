@@ -1,6 +1,5 @@
 import React from "react";
 import "./contact.scss";
-import TwitterIcon from "@mui/icons-material/Twitter";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import PersonIcon from "@mui/icons-material/Person";
@@ -69,7 +68,7 @@ function Contact() {
     <main id="form">
       <Square2></Square2>
       <form onSubmit={sendEmail} className="inputContainer">
-        <h2>LET'S CREATE SOMETHING CREATIVE</h2>
+        <h2>LET'S CREATE SOMETHING NEW</h2>
         <p type="Name:">
           <input
             className="inputfield"
@@ -99,10 +98,10 @@ function Contact() {
           ></input>
         </p>
         <button id="btn">Send Message</button>
-        <div id="contact">
+        <div id="contactContainer">
           <div id="contactInfo">
             {/* Mapping over all the different icons/links and creating an anchor tag and inserting the different object values */}
-            <ul className="wrapper">
+            <ul className="socialMediaBtns">
               {links.map((link) => (
                 <a
                   key={link.id}
@@ -111,8 +110,8 @@ function Contact() {
                   rel="noreferrer"
                   style={{ color: "white" }}
                 >
-                  <li className={`icon ${link.id}`}>
-                    <span className="tooltip">{link.name}</span>
+                  <li className={`icons ${link.id}`}>
+                    <span className="tooltips">{link.name}</span>
                     <span>{link.icon()}</span>
                   </li>
                 </a>
