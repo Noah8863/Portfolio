@@ -17,11 +17,11 @@ function App() {
             <Hero />
             <Skills />
             <Projects />
+            <Footer />
           </>
           }></Route>
         <Route exact path="/contact" element={<Contact />}></Route>
       </Routes>
-      <Footer />
     </Router>
   );
 }

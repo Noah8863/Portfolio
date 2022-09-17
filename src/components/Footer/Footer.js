@@ -45,7 +45,7 @@ const links = [
 
 export default function Footer() {
     return (
-        <section id="contact">
+        <div id="contact">
             <div id="contact-info">
                 {/* Mapping over all the different icons/links and creating an anchor tag and inserting the different object values */}
                 <ul className="wrapper">
@@ -63,6 +63,6 @@ export default function Footer() {
                     ))}
                 </ul>
             </div>
-        </section>
+        </div>
     )
 }
