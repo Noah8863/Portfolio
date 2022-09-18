@@ -37,6 +37,10 @@ function Contact() {
       );
   };
 
+  function showMessage() {
+    alert("Thanks for reaching out! Ill be sure to get back to you soon.");
+}
+
   const links = [
     {
       name: "GitHub",
@@ -67,7 +71,7 @@ function Contact() {
   return (
     <main id="form">
       <Square2></Square2>
-      <form onSubmit={sendEmail} className="inputContainer">
+      <form className="inputContainer">
         <h2>LET'S CREATE SOMETHING NEW</h2>
         <p type="Name:">
           <input
@@ -97,7 +101,7 @@ function Contact() {
             placeholder="What would you like to talk about?"
           ></input>
         </p>
-        <button id="btn">Send Message</button>
+        <button id="btn" className="bubbly-button" onClick={showMessage}>Send Message</button>
         <div id="contactContainer">
           <div id="contactInfo">
             {/* Mapping over all the different icons/links and creating an anchor tag and inserting the different object values */}
