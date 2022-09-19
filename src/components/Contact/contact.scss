@@ -1,15 +1,15 @@
 @import "../../main.scss";
 
 body {
-    background: linear-gradient(to bottom, #2c5364, #203a43, #0f2027);
+  background: $background;
 }
 #form {
-    overflow-y: hidden;
+  overflow-y: hidden;
 }
 .inputContainer {
   width: 60%;
   height: 440px;
-  background: #e6e6e6;
+  background: $cardBackground;
   border-radius: 8px;
   box-shadow: 0 0 40px -10px #000;
   margin-left: auto;
@@ -21,6 +21,9 @@ body {
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
   position: relative;
+}
+.inputContainer h2 {
+  color: $cardHeader;
 }
 .inputfield {
   width: 100%;
@@ -51,28 +54,29 @@ body {
   margin: auto;
   font-family: "Montserrat", sans-serif;
   border: 2px solid #78788c;
-  background: 0;
-  color: #5a5a6e;
+  background: $button;
+  color: white;
   cursor: pointer;
   transition: all 0.3s;
 }
 #btn:hover {
-  background: #203a43;
+  background: #6341cc;
   color: #fff;
 }
 
 #contactContainer {
-    margin-top: 10px;
-    background: none;
+  margin-top: 10px;
+  background: none;
 }
 .socialMediaBtns {
-    display: flex;
-    justify-content: center;
-    margin: auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin: auto;
 }
 .socialMediaBtns .icons {
   position: relative;
-  background: #203a43;
+  background: $button;
   border-radius: 50%;
   padding: 15px;
   margin: 10px;
@@ -141,4 +145,15 @@ body {
 .socialMediaBtns .resume:hover .tooltips::before {
   background: #7d7e7e;
   color: #ffffff;
+}
+
+@media screen and (max-width: 425px) {
+  .inputContainer {
+    width: 100%;
+  }
+  .socialMediaBtns .icons {
+    width: 25px;
+    height: 25px;
+    left: -15px;
+  }
 }

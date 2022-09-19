@@ -5,7 +5,7 @@
   transition: $property $duration $ease;
 }
 .navbar {
-  background-color: #fbfbfb;
+  background-color: $cardBackground;
   position: fixed; 
   top: 0; 
   width: 100%; 
@@ -34,7 +34,7 @@
         margin: 0;
         width: 2rem;
         height: 2rem;
-        background: $secondary;
+        background: $cardTag;
         border-radius: 1.625rem;
         .icon {
           @include transition(all, 0.45s, cubic-bezier(0.65,0,.076,1));
@@ -71,7 +71,7 @@
         bottom: 1.5rem;
         padding: 0.75rem 0;
         margin: auto;
-        color: $secondary;
+        color: $cardTag;
         font-weight: 700;
         line-height: 1.6;
         text-align: center;
@@ -96,7 +96,7 @@
 .navBarLinks {
   position: relative;
   margin: auto;
-  color: $secondary;
+  color: $cardTag;
 }
 
 

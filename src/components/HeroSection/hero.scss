@@ -2,9 +2,15 @@
 
 #heroContainer {
     height: 100vh;
-    background: linear-gradient(to bottom, #2C5364, #203A43, #0F2027);
+    background: $background;
 }
-.test1 {
+#avatar {
+    position: absolute;
+    left: 40%;
+    width: 20%;
+    z-index: 3;
+}
+.banner {
     position: relative;
     background-color: white;
     top: 60%;

@@ -9,7 +9,7 @@ function NavBar() {
         <nav>
             <Navbar className="navbar" variant="dark">
                 <Container>
-                    <Navbar.Brand style={{ color: '#77ACF1' }}>Noah Hoffman</Navbar.Brand>
+                    <Navbar.Brand style={{ color: '#7f5af0' }}>Noah Hoffman</Navbar.Brand>
                     <Nav className="me-auto">
                         <Nav.Link className='navBarLinks' href="/">Home</Nav.Link>
                         <Nav.Link className='navBarLinks' href="#projects">Projects</Nav.Link>
