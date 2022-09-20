@@ -46,7 +46,7 @@ export default function Skills() {
     // All the desktop animation sequences after the initial position has been executed
     async function leftSequence() {
         await leftContainer.start({ x: '100vw', });
-        await leftContainer.start({ x: 410, transition: { type: 'spring', stiffness: 20 } })
+        await leftContainer.start({ x: "30vw", transition: { type: 'spring', stiffness: 30 } })
         await leftContainer.start({ x: '5vw', transition: { delay: 0.8, duration: 1.5 } })
     }
 
@@ -56,7 +56,7 @@ export default function Skills() {
 
     async function rightSequence() {
         await rightContainer.start({ x: '-100vw' });
-        await rightContainer.start({ x: -400, transition: { type: 'spring', stiffness: 20 } })
+        await rightContainer.start({ x: "30", transition: { type: 'spring', stiffness: 30 } })
         await rightContainer.start({ x: '10vw', transition: { delay: 0.8, duration: 1.5 } })
     };
 
@@ -68,7 +68,7 @@ export default function Skills() {
     // All the mobile animation sequences
     async function leftMobileSequence() {
         await leftMobileContainer.start({ x: '-100vw', height: 110 });
-        await leftMobileContainer.start({ x: 0, transition: { type: 'spring', stiffness: 20 } })
+        await leftMobileContainer.start({ x: 0, transition: { type: 'spring', stiffness: 30 } })
         await leftMobileContainer.start({ y: -30, height: 60, transition: { delay: 0.8, duration: 1.5 } })
     };
     useEffect(() => {
@@ -77,7 +77,7 @@ export default function Skills() {
 
     async function rightMobileSequence() {
         await rightMobileContainer.start({ x: '100vw', height: 110 });
-        await rightMobileContainer.start({ x: 0, transition: { type: 'spring', stiffness: 20 } });
+        await rightMobileContainer.start({ x: 0, transition: { type: 'spring', stiffness: 30 } });
         await rightMobileContainer.start({ y: -30, height: 60, transition: { delay: 0.8, duration: 1.5 } })
     };
 
@@ -96,12 +96,12 @@ export default function Skills() {
     // Children animation for each skill details
     async function leftChildrenDescription() {
         await leftDescription.start({ opacity: 0, x: '-40vw' })
-        await leftDescription.start({ opacity: 1, x: '-20vw', transition: { delay: 4.2, duration: 2 } })
+        await leftDescription.start({ opacity: 1, x: '-10vw', transition: { delay: 4.2, duration: 2 } })
     }
 
     async function rightChildrenDescription() {
         await rightDescription.start({ opacity: 0, x: '30vw' })
-        await rightDescription.start({ opacity: 1, x: '20vw', transition: { delay: 4.2, duration: 1.8 } })
+        await rightDescription.start({ opacity: 1, x: '10vw', transition: { delay: 4.2, duration: 1.8 } })
     }
 
 
@@ -112,17 +112,17 @@ export default function Skills() {
                     <motion.h1 style={{ textAlign: 'center' }} id="fullStack" initial="hidden" animate={FadeIn}>Full Stack Developer</motion.h1>
                     <div className="frontEnd">
                         <motion.div className="leftSkills" variants={leftContainerStart} initial="hidden" animate={leftContainer}>
-                            <h1>Front End Developement</h1>
+                            <h2>Front End Developement</h2>
                         </motion.div>
                         <motion.div className="leftContainerDetails" initial="hidden" animate={leftDescription}>
                             <ul className="skillList">
-                                <h4>HTML</h4>
-                                <h4>CSS</h4>
-                                <h4>SCSS</h4>
-                                <h4>Javascript</h4>
-                                <h4>React</h4>
-                                <h4>JSX</h4>
-                                <h4>Framer-Motion</h4>
+                                <h5>HTML</h5>
+                                <h5>CSS</h5>
+                                <h5>SCSS</h5>
+                                <h5>Javascript</h5>
+                                <h5>React</h5>
+                                <h5>JSX</h5>
+                                <h5>Framer-Motion</h5>
                             </ul>
                         </motion.div>
                     </div>
@@ -130,10 +130,10 @@ export default function Skills() {
                     <div className="backEnd">
                         <motion.div className="rightContainerDetails" initial="hidden" animate={rightDescription}>
                             <ul className="skillList">
-                                <h4>Express</h4>
-                                <h4>Node.js</h4>
-                                <h4>Javascript</h4>
-                                <h4>Restful API's</h4>
+                                <h5>Express</h5>
+                                <h5>Node.js</h5>
+                                <h5>Javascript</h5>
+                                <h5>Restful API's</h5>
                             </ul>
                         </motion.div>
                         <motion.div className="rightSkills" variants={rightContainerStart} initial="hidden" animate={rightContainer}>
@@ -147,10 +147,10 @@ export default function Skills() {
                         </motion.div>
                         <motion.div className="leftContainerDetails" initial="hidden" animate={leftDescription}>
                             <ul className="skillList">
-                                <h4>SQL</h4>
-                                <h4>NoSQL</h4>
-                                <h4>MongoDB</h4>
-                                <h4>GraphQL</h4>
+                                <h5>SQL</h5>
+                                <h5>NoSQL</h5>
+                                <h5>MongoDB</h5>
+                                <h5>GraphQL</h5>
                             </ul>
                         </motion.div>
                     </div>
@@ -158,14 +158,14 @@ export default function Skills() {
                     <div className="tools">
                         <motion.div className="rightContainerDetails" initial="hidden" animate={rightDescription}>
                             <ul className="skillList">
-                                <h4>Git</h4>
-                                <h4>GitHub</h4>
-                                <h4>VS Code</h4>
-                                <h4>Zsh/Bash</h4>
-                                <h4>Netlify</h4>
-                                <h4>Heroku</h4>
-                                <h4>Jest</h4>
-                                <h4>Webpack</h4>
+                                <h5>Git</h5>
+                                <h5>GitHub</h5>
+                                <h5>VS Code</h5>
+                                <h5>Zsh/Bash</h5>
+                                <h5>Netlify</h5>
+                                <h5>Heroku</h5>
+                                <h5>Jest</h5>
+                                <h5>Webpack</h5>
                             </ul>
                         </motion.div>
                         <motion.div className="rightSkills" variants={rightContainerStart} initial="hidden" animate={rightContainer}>

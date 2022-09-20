@@ -39,7 +39,7 @@
 }
 .backEnd, .tools {
     display: grid;
-    grid-template-columns:40% auto;
+    grid-template-columns:30% 50%;
 }
 .leftContainerDetails, .rightContainerDetails {
     position: relative;
@@ -56,16 +56,15 @@
     justify-content: center;
     align-items: center;
     background-color: $cardBackground;
-    width: 80%;
+    width: 60%;
     color: $headline;
 }
-.skillList h4{
+.skillList h5 {
     display: inline;
-    margin: 15px;
     text-align: center;
     background-color:$cardTag;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
     white-space: nowrap;
 }
 
