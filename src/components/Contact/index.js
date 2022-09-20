@@ -6,6 +6,7 @@ import PersonIcon from "@mui/icons-material/Person";
 import emailjs from "@emailjs/browser";
 import Square1 from "../Shapes/Square1/index";
 import Square2 from "../Shapes/Square2/index";
+import Square3 from "../Shapes/Square3/index";
 
 function Contact() {
   const sendEmail = (e) => {
@@ -125,6 +126,7 @@ function Contact() {
         </div>
       </form>
       <Square1></Square1>
+      <Square3></Square3>
     </main>
   );
 }

@@ -47,7 +47,7 @@ export default function Skills() {
     async function leftSequence() {
         await leftContainer.start({ x: '100vw', });
         await leftContainer.start({ x: 410, transition: { type: 'spring', stiffness: 20 } })
-        await leftContainer.start({ x: '-10vw', transition: { delay: 0.8, duration: 1.5 } })
+        await leftContainer.start({ x: '5vw', transition: { delay: 0.8, duration: 1.5 } })
     }
 
     useEffect(() => {
@@ -112,37 +112,64 @@ export default function Skills() {
                     <motion.h1 style={{ textAlign: 'center' }} id="fullStack" initial="hidden" animate={FadeIn}>Full Stack Developer</motion.h1>
                     <div className="frontEnd">
                         <motion.div className="leftSkills" variants={leftContainerStart} initial="hidden" animate={leftContainer}>
-                            <h1 style={{ fontWeight: 'bold'}}>Front End Developement</h1>
+                            <h1>Front End Developement</h1>
                         </motion.div>
                         <motion.div className="leftContainerDetails" initial="hidden" animate={leftDescription}>
-                            <h3>HTML | CSS | SCSS | JavaScript | React | Framer-Motion | JSX</h3>
+                            <ul className="skillList">
+                                <h4>HTML</h4>
+                                <h4>CSS</h4>
+                                <h4>SCSS</h4>
+                                <h4>Javascript</h4>
+                                <h4>React</h4>
+                                <h4>JSX</h4>
+                                <h4>Framer-Motion</h4>
+                            </ul>
                         </motion.div>
                     </div>
 
                     <div className="backEnd">
                         <motion.div className="rightContainerDetails" initial="hidden" animate={rightDescription}>
-                            <h3> Express | Node.js | jQuery | JavaScript | Restful API's</h3>
+                            <ul className="skillList">
+                                <h4>Express</h4>
+                                <h4>Node.js</h4>
+                                <h4>Javascript</h4>
+                                <h4>Restful API's</h4>
+                            </ul>
                         </motion.div>
                         <motion.div className="rightSkills" variants={rightContainerStart} initial="hidden" animate={rightContainer}>
-                            <h1 id="backEndText" style={{ fontWeight: 'bold'}}>Back End Developement</h1>
+                            <h1 id="backEndText">Back End Developement</h1>
                         </motion.div>
                     </div>
 
                     <div className="server">
                         <motion.div className="leftSkills" variants={leftContainerStart} initial="hidden" animate={leftContainer}>
-                            <h1 id="databaseText" style={{ fontWeight: 'bold'}}>Databases</h1>
+                            <h1 id="databaseText">Databases</h1>
                         </motion.div>
                         <motion.div className="leftContainerDetails" initial="hidden" animate={leftDescription}>
-                            <h3>SQL | NoSQL | MongoDB | Mongoose | GraphQL </h3>
+                            <ul className="skillList">
+                                <h4>SQL</h4>
+                                <h4>NoSQL</h4>
+                                <h4>MongoDB</h4>
+                                <h4>GraphQL</h4>
+                            </ul>
                         </motion.div>
                     </div>
 
                     <div className="tools">
                         <motion.div className="rightContainerDetails" initial="hidden" animate={rightDescription}>
-                            <h3> Git | GitHub | VS Code | Zsh/Bash | Netlify | Jest | Webpack | Heroku</h3>
+                            <ul className="skillList">
+                                <h4>Git</h4>
+                                <h4>GitHub</h4>
+                                <h4>VS Code</h4>
+                                <h4>Zsh/Bash</h4>
+                                <h4>Netlify</h4>
+                                <h4>Heroku</h4>
+                                <h4>Jest</h4>
+                                <h4>Webpack</h4>
+                            </ul>
                         </motion.div>
                         <motion.div className="rightSkills" variants={rightContainerStart} initial="hidden" animate={rightContainer}>
-                            <h1 id="toolsText" style={{ fontWeight: 'bold'}}>Tools</h1>
+                            <h1 id="toolsText">Tools</h1>
                         </motion.div>
                     </div>
                 </div>

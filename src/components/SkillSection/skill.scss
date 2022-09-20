@@ -48,33 +48,25 @@
     justify-content: center;
     text-align: center;
     color: white;
+    background-color: $cardTag;
 }
-.leftSkills {
+.leftSkills, .rightSkills {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
-    width: 50%;
-    margin: auto;
-    font-size: 72px;
-    background: -webkit-linear-gradient(#eee, #333);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    background-color: $cardBackground;
+    width: 80%;
+    color: $headline;
 }
-
-.rightSkills {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 50%;
-    margin: auto;
-    background: -webkit-linear-gradient(#eee, #333);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-
+.skillList h4{
+    display: inline;
+    margin: 15px;
+    text-align: center;
+    background-color:$cardTag;
+    padding-left: 10px;
+    padding-right: 10px;
+    white-space: nowrap;
 }
 
 // ====== Mobile Responsive Animations ====== //

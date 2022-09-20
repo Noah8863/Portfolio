@@ -7,7 +7,7 @@ function Square1() {
     const ref = useRef(null);
 
     useAnimationFrame((t) => {
-        const rotate = Math.sin(t / 10000) * 100;
+        const rotate = Math.sin(t / 20000) * 270;
         const y = (1 + Math.sin(t / 1000)) * -20;
         ref.current.style.transform = `translateY(${y}px) rotateX(${rotate}deg) rotateY(${rotate}deg)`;
     });

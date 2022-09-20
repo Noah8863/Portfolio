@@ -4,7 +4,7 @@
     position: relative;
     transform-style: preserve-3d;
     left: 10%;
-    top: 80px;
+    top: 20px;
 }
 
 .side-cube1 {
@@ -16,32 +16,32 @@
 
 .front-cube1 {
     transform: rotateY(0deg) translateZ(100px);
-    background-color: #ee4444;
+    background-color: #2cb67d;
 }
 
 .right-cube1 {
     transform: rotateY(90deg) translateZ(100px);
-    background-color: #ffcc00;
+    background-color: #7f5af0;
 }
 
 .back-cube1 {
     transform: rotateY(180deg) translateZ(100px);
-    background-color: #ff0055;
+    background-color: #2cb67d;
 }
 
 .left-cube1 {
     transform: rotateY(-90deg) translateZ(100px);
-    background-color: #8855ff;
+    background-color: #7f5af0;
 }
 
 .top-cube1 {
     transform: rotateX(90deg) translateZ(100px);
-    background-color: #0099ff;
+    background-color: #2cb67d;
 }
 
 .bottom-cube1 {
     transform: rotateX(-90deg) translateZ(100px);
-    background-color: #22cc88;
+    background-color: #7f5af0;
 }
 
 @media screen and (max-width: 550px) {
