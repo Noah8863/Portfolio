@@ -70,7 +70,7 @@ function Contact() {
   ];
 
   return (
-    <main id="form">
+    <main>
       <Square2></Square2>
       <form className="inputContainer">
         <h2>LET'S CREATE SOMETHING NEW</h2>

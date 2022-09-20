@@ -3,13 +3,10 @@
 body {
   background: $background;
 }
-#form {
-  overflow-y: hidden;
-}
 .inputContainer {
   width: 60%;
   height: 440px;
-  background: $cardBackground;
+  background-color: rgb(36, 38, 41, 0.9);
   border-radius: 8px;
   box-shadow: 0 0 40px -10px #000;
   margin-left: auto;
@@ -153,6 +150,7 @@ body {
 @media screen and (max-width: 425px) {
   .inputContainer {
     width: 100%;
+    background-color: rgb(36, 38, 41, 0.9)
   }
   .socialMediaBtns .icons {
     width: 25px;
