@@ -46,8 +46,8 @@ export default function Skills() {
     // All the desktop animation sequences after the initial position has been executed
     async function leftSequence() {
         await leftContainer.start({ x: '100vw', });
-        await leftContainer.start({ x: "30vw", transition: { type: 'spring', stiffness: 30 } })
-        await leftContainer.start({ x: '5vw', transition: { delay: 0.8, duration: 1.5 } })
+        await leftContainer.start({ x: "30vw", transition: { type: 'spring', stiffness: 30, duration: 1.5 } })
+        await leftContainer.start({ x: '5vw', transition: { delay: 1.8, duration: 1.5 } })
     }
 
     useEffect(() => {
@@ -55,9 +55,9 @@ export default function Skills() {
     }, []);
 
     async function rightSequence() {
-        await rightContainer.start({ x: '-100vw' });
-        await rightContainer.start({ x: "30", transition: { type: 'spring', stiffness: 30 } })
-        await rightContainer.start({ x: '10vw', transition: { delay: 0.8, duration: 1.5 } })
+        await rightContainer.start({ x: '-100vw'});
+        await rightContainer.start({ x: "-10vw", transition: { type: 'spring', stiffness: 30, duration: 1.5 } })
+        await rightContainer.start({ x: '15vw', transition: { delay: 1.8, duration: 1.5 } })
     };
 
     useEffect(() => {
@@ -90,18 +90,18 @@ export default function Skills() {
     //Fade in effect using variants so I can reuse them later
     async function Fade() {
         await FadeIn.start({ opacity: 0 });
-        await FadeIn.start({ opacity: 1, transition: { delay: 2.3, duration: 1.5 } });
+        await FadeIn.start({ opacity: 1, transition: { delay: 1.3, duration: 1.5 } });
     }
 
     // Children animation for each skill details
     async function leftChildrenDescription() {
         await leftDescription.start({ opacity: 0, x: '-40vw' })
-        await leftDescription.start({ opacity: 1, x: '-10vw', transition: { delay: 4.2, duration: 2 } })
+        await leftDescription.start({ opacity: 1, x: '-10vw', transition: { delay: 3.5, duration: 1.5 } })
     }
 
     async function rightChildrenDescription() {
         await rightDescription.start({ opacity: 0, x: '30vw' })
-        await rightDescription.start({ opacity: 1, x: '10vw', transition: { delay: 4.2, duration: 1.8 } })
+        await rightDescription.start({ opacity: 1, x: '5vw', transition: { delay: 3.5, duration: 1.5 } })
     }
 
 
@@ -137,13 +137,13 @@ export default function Skills() {
                             </ul>
                         </motion.div>
                         <motion.div className="rightSkills" variants={rightContainerStart} initial="hidden" animate={rightContainer}>
-                            <h1 id="backEndText">Back End Developement</h1>
+                            <h2 id="backEndText">Back End Developement</h2>
                         </motion.div>
                     </div>
 
                     <div className="server">
                         <motion.div className="leftSkills" variants={leftContainerStart} initial="hidden" animate={leftContainer}>
-                            <h1 id="databaseText">Databases</h1>
+                            <h2 id="databaseText">Databases</h2>
                         </motion.div>
                         <motion.div className="leftContainerDetails" initial="hidden" animate={leftDescription}>
                             <ul className="skillList">
@@ -169,7 +169,7 @@ export default function Skills() {
                             </ul>
                         </motion.div>
                         <motion.div className="rightSkills" variants={rightContainerStart} initial="hidden" animate={rightContainer}>
-                            <h1 id="toolsText">Tools</h1>
+                            <h2 id="toolsText">Tools</h2>
                         </motion.div>
                     </div>
                 </div>
