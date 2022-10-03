@@ -9,17 +9,19 @@ section {
 }
 
 .skillSection {
-  height: 100vh;
-  background-image: linear-gradient(to bottom, #5ee7df 0%, #b490ca 100%);
+  height: 100%;
+  overflow-x: hidden;
 }
 
 .skillDesktopContainer {
   position: relative;
   display: flex;
-  top: 6%;
+  top: 5%;
   justify-content: center;
   align-items: center;
   margin: auto;
+  color: white;
+  background: #16161a;
 }
 
 .parent {
@@ -28,10 +30,19 @@ section {
   height: auto;
 }
 
+#fullStack {
+  position: relative;
+  top: 80px;
+  margin-bottom: 0px;
+}
+
 .frontEnd, .backEnd, .server, .tools {
+  position: relative;
   width: 100%;
-  height: 225px;
-  margin: 5px auto;
+  height: 120px;
+  margin: 5% auto 5% auto;
+  color: black;
+  text-align: center;
 }
 
 .frontEnd, .server {
@@ -41,7 +52,7 @@ section {
 
 .backEnd, .tools {
   display: grid;
-  grid-template-columns: 40% auto;
+  grid-template-columns: 50% auto;
 }
 
 .leftContainerDetails, .rightContainerDetails {
@@ -50,28 +61,30 @@ section {
   align-items: center;
   justify-content: center;
   text-align: center;
+  overflow: auto;
+  color: white;
+  background-color: #7f5af0;
+  word-wrap: break;
+  height: auto;
 }
 
-.leftSkills {
+.leftSkills, .rightSkills {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: white;
-  height: 100%;
-  width: 50%;
-  margin: auto;
+  background-color: #242629;
+  width: 60%;
+  color: rgba(255, 255, 255, 0.9333333333);
 }
 
-.rightSkills {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: white;
-  height: 100%;
-  width: 50%;
-  margin: auto;
+.skillList h5 {
+  display: inline;
+  text-align: center;
+  background-color: #7f5af0;
+  padding-left: 15px;
+  padding-right: 15px;
+  white-space: nowrap;
 }
 
 .skillMobileContainer {
@@ -79,9 +92,23 @@ section {
   position: relative;
   top: 10%;
   height: 90%;
+  background: linear-gradient(to top, #2C5364, #203A43, #0F2027);
 }
 
+@media screen and (max-width: 1600px) {
+  .frontEnd, .backEnd, .server, .tools {
+    margin: 10% auto 5% auto;
+  }
+}
+@media screen and (max-width: 800px) {
+  .frontEnd, .backEnd, .server, .tools {
+    margin: 15% auto 5% auto;
+  }
+}
 @media screen and (max-width: 425px) {
+  .skillSection {
+    height: 100vh;
+  }
   .skillDesktopContainer {
     display: none;
   }

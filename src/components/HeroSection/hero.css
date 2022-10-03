@@ -10,10 +10,17 @@ section {
 
 #heroContainer {
   height: 100vh;
-  background-image: linear-gradient(to top, #5ee7df 0%, #b490ca 100%);
+  background: #16161a;
 }
 
-.test1 {
+#avatar {
+  position: absolute;
+  left: 40%;
+  width: 20%;
+  z-index: 3;
+}
+
+.banner {
   position: relative;
   background-color: white;
   top: 60%;

@@ -12,8 +12,9 @@ function NavBar() {
                     <Navbar.Brand style={{ color: '#7f5af0' }}>Noah Hoffman</Navbar.Brand>
                     <Nav className="me-auto">
                         <Nav.Link className='navBarLinks' href="/">Home</Nav.Link>
-                        <Nav.Link className='navBarLinks' href="#projects">Projects</Nav.Link>
+                        <Nav.Link className='navBarLinks' href="#about">About</Nav.Link>
                         <Nav.Link className='navBarLinks' href="#skills">Skills</Nav.Link>
+                        <Nav.Link className='navBarLinks' href="#projects">Projects</Nav.Link>
                         <Nav.Link className='navBarLinks' href="/contact">
                             <button id="button1" className="learn-more">
                                 <span className="circle" aria-hidden="true">
@@ -34,7 +35,8 @@ function NavBar() {
                     </label>
 
                     <ul className="menu__box">
-                        <li><a className="menu__item" href="#">Home</a></li>
+                        <li><a className="menu__item" href="/">Home</a></li>
+                        <li><a className="menu__item" href="#about">Read About Me</a></li>
                         <li><a className="menu__item" href="#skillSection">Learn my skills</a></li>
                         <li><a className="menu__item" href="#projectSection">View my projects</a></li>
                         <li><a className="menu__item" href="/contact">Let's talk</a></li>

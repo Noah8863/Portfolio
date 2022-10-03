@@ -6,4 +6,175 @@ html {
 
 section {
   scroll-snap-align: start;
+}
+
+body {
+  background: #16161a;
+}
+
+.inputContainer {
+  width: 60%;
+  height: 440px;
+  background-color: rgba(36, 38, 41, 0.9);
+  border-radius: 8px;
+  box-shadow: 0 0 40px -10px #000;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  padding: 20px 30px;
+  max-width: calc(100vw - 40px);
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  position: relative;
+  z-index: 3;
+}
+
+.inputContainer h2 {
+  color: #fffffe;
+}
+
+.inputfield {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  background: none;
+  outline: none;
+  resize: none;
+  border: 0;
+  font-family: "Montserrat", sans-serif;
+  transition: all 0.3s;
+  border-bottom: 2px solid #bebed2;
+  color: rgb(195, 192, 192);
+}
+
+.inputfield:focus {
+  border-bottom: 2px solid #7f5af0;
+}
+
+.inputfield p:before {
+  content: attr(type);
+  display: block;
+  margin: 28px 0 0;
+  font-size: 14px;
+  color: #5a5a5a;
+}
+
+#btn {
+  display: flex;
+  justify-content: center;
+  padding: 8px 12px;
+  margin: auto;
+  font-family: "Montserrat", sans-serif;
+  border: 2px solid #78788c;
+  background: #7f5af0;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+#btn:hover {
+  background: #6341cc;
+  color: #fff;
+}
+
+#contactContainer {
+  margin-top: 10px;
+  background: none;
+}
+
+.socialMediaBtns {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+.socialMediaBtns .icons {
+  position: relative;
+  background: #7f5af0;
+  border-radius: 50%;
+  padding: 15px;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  left: -15px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.socialMediaBtns .tooltips {
+  position: absolute;
+  top: 0;
+  font-size: 14px;
+  background: #ffffff;
+  color: #000000;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.socialMediaBtns .tooltips::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background: #ffffff;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.socialMediaBtns .icons:hover .tooltips {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.socialMediaBtns .icons:hover span,
+.socialMediaBtns .icons:hover .tooltips {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.socialMediaBtns .github:hover,
+.socialMediaBtns .github:hover .tooltips,
+.socialMediaBtns .github:hover .tooltips::before {
+  background: #5e1d94;
+  color: #ffffff;
+}
+
+.socialMediaBtns .linkedin:hover,
+.socialMediaBtns .linkedin:hover .tooltips,
+.socialMediaBtns .linkedin:hover .tooltips::before {
+  background: #1c6894;
+  color: #ffffff;
+}
+
+.socialMediaBtns .resume:hover,
+.socialMediaBtns .resume:hover .tooltips,
+.socialMediaBtns .resume:hover .tooltips::before {
+  background: #7d7e7e;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 425px) {
+  .inputContainer {
+    width: 100%;
+    background-color: rgba(36, 38, 41, 0.9);
+  }
+  .socialMediaBtns .icons {
+    width: 25px;
+    height: 25px;
+  }
 }/*# sourceMappingURL=contact.css.map */
