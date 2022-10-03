@@ -2,10 +2,11 @@
 
 #contact {
   text-align: center;
-  position: relative;
-  background-color: white;
-  bottom: 0;
+  position:fixed;
+  width: 100%;
   height: auto;
+  bottom: 0;
+  z-index: 3;
 }
 .wrapper {
   display: inline-flex;
@@ -13,7 +14,7 @@
 }
 .wrapper .icon {
   position: relative;
-  background: $secondary;
+  background: #7f5af0;
   border-radius: 50%;
   padding: 15px;
   margin: 10px;

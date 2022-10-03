@@ -17,7 +17,7 @@ export default function Skills() {
             rightMobileSequence();
         })
         observer.observe(sectionRef.current)
-    })
+    }, [])
 
     const FadeIn = useAnimation();
 
@@ -45,8 +45,8 @@ export default function Skills() {
 
     // All the desktop animation sequences after the initial position has been executed
     async function leftSequence() {
-        await leftContainer.start({ x: '100vw', });
-        await leftContainer.start({ x: "30vw", transition: { type: 'spring', stiffness: 30, duration: 1.5 } })
+        await leftContainer.start({ x: '100vw'});
+        await leftContainer.start({ x: "30vw", transition: { type: 'spring', stiffness: 30 }})
         await leftContainer.start({ x: '5vw', transition: { delay: 1.8, duration: 1.5 } })
     }
 
@@ -96,12 +96,12 @@ export default function Skills() {
     // Children animation for each skill details
     async function leftChildrenDescription() {
         await leftDescription.start({ opacity: 0, x: '-40vw' })
-        await leftDescription.start({ opacity: 1, x: '-10vw', transition: { delay: 3.5, duration: 1.5 } })
+        await leftDescription.start({ opacity: 1, x: '10vw', transition: { delay: 3.5, duration: 1.5 } })
     }
 
     async function rightChildrenDescription() {
-        await rightDescription.start({ opacity: 0, x: '30vw' })
-        await rightDescription.start({ opacity: 1, x: '5vw', transition: { delay: 3.5, duration: 1.5 } })
+        await rightDescription.start({ opacity: 0, x: '40vw' })
+        await rightDescription.start({ opacity: 1, x: '10vw', transition: { delay: 3.5, duration: 1.5 } })
     }
 
 

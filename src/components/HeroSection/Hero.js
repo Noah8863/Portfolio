@@ -9,14 +9,13 @@ function Hero() {
     return (
         <section id="heroContainer">
             {/* <img id="avatar" src={Avatar} /> */}
-        {/* <div className="banner">
+        <div className="banner">
             <h1>Hello, my name is Noah Hoffman</h1>
             <p>Anything in this container will not be effected by the navbar</p>
-        </div> */}
+        </div>
         <div className="shapes">
             {/* <Square1></Square1>
             <Square2></Square2> */}
-            {/* <Sphere></Sphere> */}
         </div>
         </section>
     );

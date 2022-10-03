@@ -27,32 +27,25 @@
 }
 .frontEnd, .backEnd, .server, .tools {
     position: relative;
-    width: 100%;
+    width: auto;
     height: 120px;
     margin: 5% auto 5% auto;
-    color: black;
-    text-align: center;
+    text-align:center;
 }
 
 .frontEnd, .server {
     display: grid;
-    grid-template-columns: 60% auto;
+    grid-template-columns: 40% 40%;
 }
 .backEnd, .tools {
     display: grid;
-    grid-template-columns:50% auto;
+    grid-template-columns:40% 40%;
 }
 .leftContainerDetails, .rightContainerDetails {
     position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    overflow: auto;
     color: white;
     background-color: $cardTag;
-    word-wrap: break;
-    height: auto;
+    
 }
 .leftSkills, .rightSkills {
     position: relative;
@@ -60,16 +53,23 @@
     justify-content: center;
     align-items: center;
     background-color: $cardBackground;
-    width: 60%;
+    width: auto;
     color: $headline;
 }
+.skillList {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width:auto;
+    height: 100%;
+}
 .skillList h5 {
+    position: relative;
     display: inline;
-    text-align: center;
-    background-color:$cardTag;
+    margin: auto;
     padding-left: 15px;
     padding-right: 15px;
-    white-space: nowrap;
+
 }
 
 // ====== Mobile Responsive Animations ====== //
