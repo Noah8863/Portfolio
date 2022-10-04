@@ -3,12 +3,35 @@
 #heroContainer {
     height: 100vh;
     background: $background;
+    display: grid;
 }
+#top-container, #middle-container, #bottom-container {
+    position: relative;
+    width: 100%;
+}
+
+#top-container-title {
+    position: relative;
+    font-size: 85px;
+    margin-left: 40px;
+    top: 20%;
+    color: $headline;
+}
+
 #avatar {
-    position: absolute;
-    left: 40%;
-    width: 20%;
+    position: relative;
+    width: 50%;
     z-index: 3;
+    margin: 0;
+}
+#avatar-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+    width: 500px;
+    height: auto;
 }
 .banner {
     position: relative;

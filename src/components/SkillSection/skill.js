@@ -4,6 +4,7 @@ import { useAnimation, motion } from "framer-motion";
 
 export default function Skills() {
   const sectionRef = useRef();
+  //TODO: Figure out a better section detection
   const windowWidth = window.innerWidth;
   console.log(window);
   useEffect(() => {
@@ -369,7 +370,7 @@ export default function Skills() {
             animate={toolsMobileDescription}
           >
             <ul className="mobile-Skill-List">
-              <p>Git GitHub VS Code Zsh/Bash Netlify Heroku Jest Webpack</p>
+              <p>Git, GitHub, VS-Code, Zsh/Bash, Netlify, Heroku, Jest, Webpack, Comment-Anchor</p>
             </ul>
           </motion.div>
         </div>
