@@ -1,114 +1,164 @@
-@import '../../main.scss';
-
-
+@import "../../main.scss";
 .skillSection {
-    height: 100%;
-    overflow-x: hidden;
+  height: 100%;
+  overflow-x: hidden;
 }
 .skillDesktopContainer {
-    position: relative;
-    display: flex;
-    top: 5%;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    color: white;
-    background: $background;
+  position: relative;
+  display: flex;
+  top: 5%;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  color: white;
+  background: $background;
 }
 .parent {
-    position: relative;
-    width: 100%;
-    height: auto;    
+  position: relative;
+  width: 100%;
+  height: auto;
 }
 #fullStack {
-    position: relative;
-    top: 80px;
-    margin-bottom: 0px;
+  position: relative;
+  top: 80px;
+  margin-bottom: 0px;
 }
-.frontEnd, .backEnd, .server, .tools {
-    position: relative;
-    width: auto;
-    height: 120px;
-    margin: 5% auto 5% auto;
-    text-align:center;
+.frontEnd,
+.backEnd,
+.server,
+.tools {
+  position: relative;
+  width: auto;
+  height: 120px;
+  margin: 5% auto 5% auto;
+  text-align: center;
 }
 
-.frontEnd, .server {
-    display: grid;
-    grid-template-columns: 40% 40%;
+.frontEnd,
+.server {
+  display: grid;
+  grid-template-columns: 40% 40%;
 }
-.backEnd, .tools {
-    display: grid;
-    grid-template-columns:40% 40%;
+.backEnd,
+.tools {
+  display: grid;
+  grid-template-columns: 40% 40%;
 }
-.leftContainerDetails, .rightContainerDetails {
-    position: relative;
-    color: white;
-    background-color: $cardTag;
-    
+.leftContainerDetails,
+.rightContainerDetails {
+  position: relative;
+  color: white;
+  background-color: $cardTag;
 }
-.leftSkills, .rightSkills {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: $cardBackground;
-    width: auto;
-    color: $headline;
+.leftSkills,
+.rightSkills {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $cardBackground;
+  width: auto;
+  color: $headline;
 }
 .skillList {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    width:auto;
-    height: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: auto;
+  height: 100%;
 }
 .skillList h5 {
-    position: relative;
-    display: inline;
-    margin: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-
+  position: relative;
+  display: inline;
+  margin: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 // ====== Mobile Responsive Animations ====== //
 
 .skillMobileContainer {
-    display: none;
-    position: relative;
-    top: 10%;
-    height: 90%;
-    background: linear-gradient(to top, #2C5364, #203A43, #0F2027);
+  display: none;
+  position: relative;
+  height: 100%;
+  background: $background;
+}
+.mobile-frontEnd,
+.mobile-backEnd,
+.mobile-server,
+.mobile-tools {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  color: $headline;
+}
+.left-Mobile-Skills,
+.right-Mobile-Skills {
+  position: relative;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  background-color: $cardBackground;
+}
+.left-mobile-container-details {
+  position: absolute;
+  justify-content: center;
+  display: block;
+  width: 100%;
+  background-color: $cardTag;
+}
+.mobile-Skill-List {
+  position: relative;
+  justify-content: center;
+  margin: auto;
+  width: 100%;
+  word-spacing: 1em;
+  text-align: center;
 }
 @media screen and (max-width: 1600px) {
-    .frontEnd, .backEnd, .server, .tools {
-        margin: 10% auto 5% auto;
-    }
+  .frontEnd,
+  .backEnd,
+  .server,
+  .tools {
+    margin: 10% auto 5% auto;
+  }
 }
 @media screen and (max-width: 800px) {
-    .frontEnd, .backEnd, .server, .tools {
-        margin: 15% auto 5% auto;
-    }
+  .frontEnd,
+  .backEnd,
+  .server,
+  .tools {
+    margin: 15% auto 5% auto;
+  }
 }
-@media screen and (max-width:425px){
-    .skillSection {
-        height: 100vh;
-    }
-    .skillDesktopContainer {
-        display: none;
-    }
-    .skillMobileContainer {
-        display: grid;
-    }
-    .parent {
-        height: 90vh;
-    }
-    .leftSkills, .rightSkills {
-        width: 100%;
-    }
-    .frontEnd, .backEnd, .server, .tools {
-        display: flex;
-        height: 15%;
-    }
+@media screen and (max-width: 425px) {
+  .skillSection {
+    height: 100vh;
+  }
+  .skillDesktopContainer {
+    display: none;
+  }
+  .skillMobileContainer {
+    display: grid;
+  }
+  .parent {
+    height: 90vh;
+  }
+  .leftSkills,
+  .rightSkills {
+    width: 100%;
+  }
+  .frontEnd,
+  .backEnd,
+  .server,
+  .tools {
+    display: flex;
+    height: 15%;
+  }
 }

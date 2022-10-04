@@ -6,7 +6,7 @@ import Coffee from '../../Images/Book-Coffee-Finder.png'
 
 function Projects() {
     return (
-        <div className="projectContainer">
+        <div className="projectContainer" id="projects">
             <section>
                 <h1 id="project-header">Projects</h1>
                 <ul className="cards">

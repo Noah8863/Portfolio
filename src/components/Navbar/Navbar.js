@@ -13,7 +13,7 @@ function NavBar() {
                     <Nav className="me-auto">
                         <Nav.Link className='navBarLinks' href="/">Home</Nav.Link>
                         <Nav.Link className='navBarLinks' href="#about">About</Nav.Link>
-                        <Nav.Link className='navBarLinks' href="#skills">Skills</Nav.Link>
+                        <Nav.Link className='navBarLinks' href="#skillSection">Skills</Nav.Link>
                         <Nav.Link className='navBarLinks' href="#projects">Projects</Nav.Link>
                         <Nav.Link className='navBarLinks' href="/contact">
                             <button id="button1" className="learn-more">
@@ -38,7 +38,7 @@ function NavBar() {
                         <li><a className="menu__item" href="/">Home</a></li>
                         <li><a className="menu__item" href="#about">Read About Me</a></li>
                         <li><a className="menu__item" href="#skillSection">Learn my skills</a></li>
-                        <li><a className="menu__item" href="#projectSection">View my projects</a></li>
+                        <li><a className="menu__item" href="#projects">View my projects</a></li>
                         <li><a className="menu__item" href="/contact">Let's talk</a></li>
                     </ul>
                 </div>
