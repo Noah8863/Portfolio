@@ -7,7 +7,8 @@ import Coffee from '../../Images/Book-Coffee-Finder.png'
 function Projects() {
     return (
         <div className="projectContainer">
-            <section id="projectSection">
+            <section>
+                <h1 id="project-header">Projects</h1>
                 <ul className="cards">
                     <li id="project1">
                         <a href="#project1" className="card">
@@ -73,6 +74,7 @@ function Projects() {
                             </div>
                         </a>
                     </li>
+                    
                 </ul>
             </section>
         </div>
