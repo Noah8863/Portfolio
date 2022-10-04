@@ -95,7 +95,7 @@ export default function Skills() {
       transition: { type: "spring", stiffness: 30 },
     });
     await leftMobileContainer.start({
-      y: -50,
+      y: -30,
       height: 60,
       transition: { delay: 0.8, duration: 1.5 },
     });
@@ -111,7 +111,7 @@ export default function Skills() {
       transition: { type: "spring", stiffness: 30 },
     });
     await rightMobileContainer.start({
-      y: -80,
+      y: -60,
       height: 60,
       transition: { delay: 0.8, duration: 1.5 },
     });
@@ -150,7 +150,7 @@ export default function Skills() {
     await frontendMobileDescription.start({ opacity: 0, y: -10 });
     await frontendMobileDescription.start({
       opacity: 1,
-      y: 40,
+      y: 60,
       transition: { delay: 2.5, duration: 1.5 },
     });
   }
@@ -159,7 +159,7 @@ export default function Skills() {
     await backendMobileDescription.start({ opacity: 0, y: -10 });
     await backendMobileDescription.start({
       opacity: 1,
-      y: 40,
+      y: 60,
       transition: { delay: 3, duration: 1.5 },
     });
   }
@@ -168,7 +168,7 @@ export default function Skills() {
     await serverMobileDescription.start({ opacity: 0, y: -10 });
     await serverMobileDescription.start({
       opacity: 1,
-      y: 40,
+      y: 60,
       transition: { delay: 3.5, duration: 1.5 },
     });
   }
@@ -177,7 +177,7 @@ export default function Skills() {
     await toolsMobileDescription.start({ opacity: 0, y: -10 });
     await toolsMobileDescription.start({
       opacity: 1,
-      y: 10,
+      y: 30,
       transition: { delay: 4, duration: 1.5 },
     });
   }
@@ -304,12 +304,12 @@ export default function Skills() {
             <h2>Front End Developement</h2>
           </motion.div>
           <motion.div
-            className="left-mobile-container-details"
+            className="mobile-container-details"
             initial="hidden"
             animate={frontendMobileDescription}
           >
             <ul className="mobile-Skill-List">
-              <p>HTML CSS SCSS Javascript React JSX Framer-Motion</p>
+              <p>HTML CSS SCSS/SASS Javascript React JSX Framer-Motion</p>
             </ul>
           </motion.div>
         </div>
@@ -324,7 +324,7 @@ export default function Skills() {
             <h2>Back End Developement</h2>
           </motion.div>
           <motion.div
-            className="left-mobile-container-details"
+            className="mobile-container-details"
             initial="hidden"
             animate={backendMobileDescription}
           >
@@ -344,7 +344,7 @@ export default function Skills() {
             <h2>Databases</h2>
           </motion.div>
           <motion.div
-            className="left-mobile-container-details"
+            className="mobile-container-details"
             initial="hidden"
             animate={serverMobileDescription}
           >
@@ -364,7 +364,7 @@ export default function Skills() {
             <h2>Tools</h2>
           </motion.div>
           <motion.div
-            className="left-mobile-container-details"
+            className="mobile-container-details"
             initial="hidden"
             animate={toolsMobileDescription}
           >

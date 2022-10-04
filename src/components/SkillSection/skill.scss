@@ -106,7 +106,7 @@
   height: auto;
   background-color: $cardBackground;
 }
-.left-mobile-container-details {
+.mobile-container-details {
   position: absolute;
   justify-content: center;
   display: block;
@@ -116,10 +116,12 @@
 .mobile-Skill-List {
   position: relative;
   justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
   margin: auto;
   width: 100%;
-  word-spacing: 1em;
-  text-align: center;
+  word-spacing: 2em;
 }
 @media screen and (max-width: 1600px) {
   .frontEnd,
