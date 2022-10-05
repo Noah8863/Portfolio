@@ -16,7 +16,9 @@ function Hero() {
           <img id="avatar" src={Avatar} />
         </div>
       </div>
-      <div id="bottom-container"></div>
+      <div id="bottom-container">
+      <p id="bottom-container-title">Noah Hoffman</p>
+      </div>
     </section>
   );
 }

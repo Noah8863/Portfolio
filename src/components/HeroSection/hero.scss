@@ -12,10 +12,13 @@
 
 #top-container-title {
     position: relative;
-    font-size: 85px;
+    font-size: 95px;
     margin-left: 40px;
     top: 20%;
     color: $headline;
+    background-color: green;
+    width:30%;
+    text-align: center;
 }
 
 #avatar {
@@ -31,14 +34,18 @@
     margin: auto;
     align-items: center;
     width: 500px;
-    height: auto;
+    height: 50vh;
+    background-color: red;
+    float:left;
 }
-.banner {
+#bottom-container-title {
     position: relative;
-    background-color: white;
-    top: 60%;
+    bottom: 20%;
+    font-size: 95px;
+    color: $headline;
+    float: right;
+    background-color:red;
+    height: auto;
+    width: 30%;
     text-align: center;
-}
-.shapes {
-    height: 30%;
 }
