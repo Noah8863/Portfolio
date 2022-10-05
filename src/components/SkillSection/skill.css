@@ -8,6 +8,12 @@ section {
   scroll-snap-align: start;
 }
 
+body::-webkit-scrollbar-thumb {
+  background-color: blue; /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+  border: 3px solid orange; /* creates padding around scroll thumb */
+}
+
 .skillSection {
   height: 100%;
   overflow-x: hidden;
@@ -36,7 +42,10 @@ section {
   margin-bottom: 0px;
 }
 
-.frontEnd, .backEnd, .server, .tools {
+.frontEnd,
+.backEnd,
+.server,
+.tools {
   position: relative;
   width: auto;
   height: 120px;
@@ -44,23 +53,27 @@ section {
   text-align: center;
 }
 
-.frontEnd, .server {
+.frontEnd,
+.server {
   display: grid;
   grid-template-columns: 40% 40%;
 }
 
-.backEnd, .tools {
+.backEnd,
+.tools {
   display: grid;
   grid-template-columns: 40% 40%;
 }
 
-.leftContainerDetails, .rightContainerDetails {
+.leftContainerDetails,
+.rightContainerDetails {
   position: relative;
   color: white;
   background-color: #7f5af0;
 }
 
-.leftSkills, .rightSkills {
+.leftSkills,
+.rightSkills {
   position: relative;
   display: flex;
   justify-content: center;
@@ -76,6 +89,7 @@ section {
   justify-content: center;
   width: auto;
   height: 100%;
+  overflow-x: scroll;
 }
 
 .skillList h5 {
@@ -89,18 +103,67 @@ section {
 .skillMobileContainer {
   display: none;
   position: relative;
-  top: 10%;
-  height: 90%;
-  background: linear-gradient(to top, #2C5364, #203A43, #0F2027);
+  height: 100%;
+  background: #16161a;
+}
+
+.mobile-frontEnd,
+.mobile-backEnd,
+.mobile-server,
+.mobile-tools {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  color: rgba(255, 255, 255, 0.9333333333);
+}
+
+.left-Mobile-Skills,
+.right-Mobile-Skills {
+  position: relative;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  background-color: #242629;
+}
+
+.mobile-container-details {
+  position: absolute;
+  justify-content: center;
+  display: block;
+  width: 100%;
+  background-color: #7f5af0;
+}
+
+.mobile-Skill-List {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  margin: auto;
+  width: 100%;
+  word-spacing: 1em;
 }
 
 @media screen and (max-width: 1600px) {
-  .frontEnd, .backEnd, .server, .tools {
+  .frontEnd,
+.backEnd,
+.server,
+.tools {
     margin: 10% auto 5% auto;
   }
 }
 @media screen and (max-width: 800px) {
-  .frontEnd, .backEnd, .server, .tools {
+  .frontEnd,
+.backEnd,
+.server,
+.tools {
     margin: 15% auto 5% auto;
   }
 }
@@ -117,10 +180,14 @@ section {
   .parent {
     height: 90vh;
   }
-  .leftSkills, .rightSkills {
+  .leftSkills,
+.rightSkills {
     width: 100%;
   }
-  .frontEnd, .backEnd, .server, .tools {
+  .frontEnd,
+.backEnd,
+.server,
+.tools {
     display: flex;
     height: 15%;
   }

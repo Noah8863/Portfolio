@@ -8,8 +8,15 @@ section {
   scroll-snap-align: start;
 }
 
+body::-webkit-scrollbar-thumb {
+  background-color: blue; /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+  border: 3px solid orange; /* creates padding around scroll thumb */
+}
+
 body {
   background: #16161a;
+  overflow-x: hidden;
 }
 
 .inputContainer {

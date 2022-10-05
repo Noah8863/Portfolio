@@ -1,25 +1,28 @@
 // Main Styles
 
 html {
-    scroll-snap-type: y mandatory;
-    scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
 }
 section {
-    scroll-snap-align:start;
+  scroll-snap-align: start;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: blue; /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+  border: 3px solid orange; /* creates padding around scroll thumb */
 }
 
-$primary: #04009A;
-$secondary: #77ACF1;
-$tertiary: #C0FEFC;
-$quaternary: #00D7FF;
+$primary: #04009a;
+$secondary: #77acf1;
+$tertiary: #c0fefc;
+$quaternary: #00d7ff;
 $textColor: #fff;
-
 
 $background: #16161a;
 $headline: #fffe;
 $button: #7f5af0;
 $buttonText: #fffffe;
-
 
 $cardBackground: #242629;
 $cardHeader: #fffffe;

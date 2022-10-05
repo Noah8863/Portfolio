@@ -8,16 +8,46 @@ section {
   scroll-snap-align: start;
 }
 
+body::-webkit-scrollbar-thumb {
+  background-color: blue; /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+  border: 3px solid orange; /* creates padding around scroll thumb */
+}
+
 #heroContainer {
   height: 100vh;
   background: #16161a;
+  display: grid;
+}
+
+#top-container, #middle-container, #bottom-container {
+  position: relative;
+  width: 100%;
+}
+
+#top-container-title {
+  position: relative;
+  font-size: 85px;
+  margin-left: 40px;
+  top: 20%;
+  color: rgba(255, 255, 255, 0.9333333333);
 }
 
 #avatar {
-  position: absolute;
-  left: 40%;
-  width: 20%;
+  position: relative;
+  width: 50%;
   z-index: 3;
+  margin: 0;
+}
+
+#avatar-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  align-items: center;
+  width: 500px;
+  height: auto;
 }
 
 .banner {
