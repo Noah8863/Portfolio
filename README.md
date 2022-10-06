@@ -3,6 +3,8 @@
 [![Frontend][Frontend-image]][Frontend-url]
 [![Backend][Backend-image]][Backend-url]
 
+## 🚧🔨 STILL UNDER CONSTRUCTION 🚧🔨
+
 This is my portfolio showcasing my recent projects and provide a way for future employeers contact me. This was build with React.js and Framer-Motion Library for the front end and Javascript for the backend email sending logic. The portfolio is fully responsive with fun animations for both desktop and mobile to view. The project consists of mainly frontend work as I inspire to be an UX/UI developer.
 
 This project took many "detours" from the original idea and created multiple wireframes morphing into what the final project is right now. As time progresses I'll be updating and adding to this portfolio. 
