@@ -70,5 +70,5 @@ I wanted to incorporate blender or spline.3d the whole project as this would giv
 [version-url]: https://img.shields.io/badge/version-1.0.0-green
 [Frontend-image]: https://img.shields.io/badge/Frontend-React.js-blue?style=for-the-badge
 [Frontend-url]: https://img.shields.io/badge/Frontend-React.JS-blue?style=for-the-badge
-[Backend-image]: https://img.shields.io/badge/Backend-Javascript-important?style=for-the-badge
-[Backend-url]: https://img.shields.io/badge/Backend-Javascript-important?style=for-the-badge
+[Backend-image]: https://img.shields.io/badge/Backend-Node.JS-important?style=for-the-badge
+[Backend-url]: https://img.shields.io/badge/Backend-Node.JS-important?style=for-the-badge
