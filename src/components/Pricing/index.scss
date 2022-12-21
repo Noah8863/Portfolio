@@ -1,0 +1,38 @@
+.pricingContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pricingColumn {
+  position: relative;
+  top: 100px;
+  width: 30%;
+  height: 200px;
+  text-align: center;
+  transition: all 0.3s;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.green {
+  background-color: green;
+}
+
+.red {
+  background-color: red;
+}
+
+.pricingColumn:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+  color: white;
+  margin: 0;
+  padding: 10px 0;
+}
+
+
+  

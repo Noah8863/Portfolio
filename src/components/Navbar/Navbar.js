@@ -15,6 +15,7 @@ function NavBar() {
                         <Nav.Link className='navBarLinks' href="#about">About</Nav.Link>
                         <Nav.Link className='navBarLinks' href="#skillSection">Skills</Nav.Link>
                         <Nav.Link className='navBarLinks' href="#projects">Projects</Nav.Link>
+                        <Nav.Link className='navBarLinks' href="/pricing">Pricing</Nav.Link>
                         <Nav.Link className='navBarLinks' href="/contact">
                             <button id="button1" className="learn-more">
                                 <span className="circle" aria-hidden="true">

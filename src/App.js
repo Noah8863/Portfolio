@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import NavBar from './components/Navbar/Navbar';
 import Contact from './components/Contact/index';
+import Pricing from './components/Pricing/index';
 import Footer from './components/Footer/Footer';
 import Hero from './components/HeroSection/Hero';
 import About from './components/About/index'
@@ -23,6 +24,7 @@ function App() {
           </>
           }></Route>
         <Route exact path="/contact" element={<Contact />}></Route>
+        <Route exact path="/pricing" element={<Pricing />}></Route>
       </Routes>
     </Router>
   );
