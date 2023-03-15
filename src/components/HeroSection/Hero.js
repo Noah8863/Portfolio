@@ -17,13 +17,10 @@ function Hero() {
         </div>
         <div id="hero-picture-container">
           <img id="avatar-pic" src={Avatar}></img>
-          <div className="solar-system">
+          <div className="solar-system"> 
             <div className="planet planet1">
               <div className="planet planet2">
                 <div className="planet planet3">
-                  <div className="planet planet4">
-                    
-                  </div>
                 </div>
               </div>
             </div>
