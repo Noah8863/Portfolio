@@ -67,14 +67,15 @@
   justify-content: center;
   width: auto;
   height: 100%;
-  overflow-x: scroll;
+  overflow: hidden;
 }
 .skillList h5 {
   position: relative;
   display: inline;
   margin: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
 }
 
 // ====== Mobile Responsive Animations ====== //

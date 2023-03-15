@@ -101,6 +101,7 @@ function Contact() {
             id="message"
             placeholder="What would you like to talk about?"
           ></input>
+          
         </p>
         <button id="btn" className="bubbly-button" onClick={showMessage}>Send Message</button>
         <div id="contactContainer">

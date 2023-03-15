@@ -8,16 +8,28 @@ import Avatar from "../../Images/Avatar.PNG";
 function Hero() {
   return (
     <section id="heroContainer">
-      <div id="top-container">
-        <p id="top-container-title">Imaginative Developer</p>
-      </div>
-      <div id="middle-container">
-        <div id="avatar-container">
-          <img id="avatar" src={Avatar} />
+      <div class="main-hero-container">
+        <div id="hero-statement">
+          <h1>
+            Hello, my name is Noah. I'm a full stack software developer with a
+            strong interest in Front End.
+          </h1>
         </div>
-      </div>
-      <div id="bottom-container">
-      <p id="bottom-container-title">Noah Hoffman</p>
+        <div id="hero-picture-container">
+          <img id="avatar-pic" src={Avatar}></img>
+          <div className="solar-system">
+            <div className="planet planet1">
+              <div className="planet planet2">
+                <div className="planet planet3">
+                  <div className="planet planet4">
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="invisible-container"></div>
       </div>
     </section>
   );
