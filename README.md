@@ -3,6 +3,8 @@
 [![Frontend][Frontend-image]][Frontend-url]
 [![Backend][Backend-image]][Backend-url]
 
+## 🚧🔨 STILL UNDER CONSTRUCTION 🚧🔨
+
 This is my portfolio showcasing my recent projects and provide a way for future employeers contact me. This was build with React.js and Framer-Motion Library for the front end and Javascript for the backend email sending logic. The portfolio is fully responsive with fun animations for both desktop and mobile to view. The project consists of mainly frontend work as I inspire to be an UX/UI developer.
 
 This project took many "detours" from the original idea and created multiple wireframes morphing into what the final project is right now. As time progresses I'll be updating and adding to this portfolio. 
@@ -68,5 +70,5 @@ I wanted to incorporate blender or spline.3d the whole project as this would giv
 [version-url]: https://img.shields.io/badge/version-1.0.0-green
 [Frontend-image]: https://img.shields.io/badge/Frontend-React.js-blue?style=for-the-badge
 [Frontend-url]: https://img.shields.io/badge/Frontend-React.JS-blue?style=for-the-badge
-[Backend-image]: https://img.shields.io/badge/Backend-Javascript-important?style=for-the-badge
-[Backend-url]: https://img.shields.io/badge/Backend-Javascript-important?style=for-the-badge
+[Backend-image]: https://img.shields.io/badge/Backend-Node.JS-important?style=for-the-badge
+[Backend-url]: https://img.shields.io/badge/Backend-Node.JS-important?style=for-the-badge

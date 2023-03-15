@@ -66,7 +66,7 @@ function Projects() {
                                     <img className="card__thumb" src={MoovySpace} alt="" />
                                     <div className="card__header-text">
                                         <h3 className="card__title">Project Awesome TBA</h3>
-                                        <span className="card__tagline">Lorem ipsum dolor sit amet consectetur</span>
+                                        <span className="card__tagline">Lorem ipsum dolord sit amet consectetur</span>
                                         <span className="card__status">Completed: August 6th 2022</span>
                                     </div>
                                 </div>
