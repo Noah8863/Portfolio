@@ -2,6 +2,7 @@ import React from "react";
 import AboutAvatar from "../../Images/avatar-pic-coffee4.jpg"
 import "./about.scss";
 
+
 function About() {
   return (
     <section className="about-section" id="about">
@@ -16,7 +17,7 @@ function About() {
       </div>
       <div className="aboutRightCon">
         <img id="aboutAvatar" src={AboutAvatar}></img>
-        <p style={{ marginLeft: 180, marginTop: 20 }}>stacknoah99@gmail.com</p>
+        <p id="email">stacknoah99@gmail.com</p>
       </div>
     </section>
   );

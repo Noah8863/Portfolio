@@ -1,13 +1,14 @@
 .about-section {
     position: relative;
-    height: 100vh;
-    width: 100vw;
-    background-color:white;
+    height: auto;
+    width: auto; 
+    background-color: #16161a;
+    color: white;
     display: grid;
     grid-template-columns: 70% auto;
+    font-size: 1.5em;
 }
 .aboutLeftCon {
-    background-color: pink;
     margin: 5%;
     text-align: left;
 }
@@ -18,11 +19,30 @@
     font-size: 45px;
     line-height: 70px;
 }
-.aboutRightCon {
-    
-}
+
 #aboutAvatar {  
-    margin: 140px 0px 0px 140px;
+    margin: 260px 0px 0px 140px;
     border-radius: 50%;
     width: auto;
+}
+#email {
+    margin: 20px 0px 0px 180px;
+}
+// marginLeft: 180, marginTop: 20
+
+@media screen and (max-width: 600px) {
+    .about-section {
+        display:block;
+        height: auto;
+        width: auto; 
+        font-size: 1em; 
+    }
+    #aboutAvatar {  
+        margin: 10px 0px 0px 20px;
+        border-radius: 50%;
+        width: auto;
+    }
+    #email {
+        margin: 20px 0px 0px 80px;
+    }
 }

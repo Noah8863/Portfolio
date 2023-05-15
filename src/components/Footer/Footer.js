@@ -1,5 +1,4 @@
 import React from 'react';
-import TwitterIcon from '@mui/icons-material/Twitter';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import PersonIcon from '@mui/icons-material/Person';
@@ -7,14 +6,6 @@ import PersonIcon from '@mui/icons-material/Person';
 import './Footer.scss'
 
 const links = [
-    {
-        name: 'Twitter',
-        link: 'https://twitter.com/stacknoah99',
-        id: 'twitter',
-        icon: function () {
-            return <TwitterIcon />
-        }
-    },
     {
         name: 'GitHub',
         link: 'https://github.com/Noah8863',
