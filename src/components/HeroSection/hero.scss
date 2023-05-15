@@ -28,10 +28,10 @@
   position: relative;
   width: 20%;
   max-width: 100%;
-  background-color: #7750eb;
-  box-shadow: 0px 0px 240px 20px #7f5af0;
   margin-top: 10%;
   z-index: 3;
+  background-color: #7f5af0;
+  box-shadow: 0px 0px 240px 20px #7f5af0;
 }
 #invisible-container {
   position: relative;
@@ -46,6 +46,7 @@
   max-width: 50rem;
   height: 40rem;
   max-height: 50rem;
+  
 }
 .planet {
   display: flex;

@@ -1,4 +1,28 @@
 .about-section {
     position: relative;
     height: 100vh;
+    width: 100vw;
+    background-color:white;
+    display: grid;
+    grid-template-columns: 70% auto;
+}
+.aboutLeftCon {
+    background-color: pink;
+    margin: 5%;
+    text-align: left;
+}
+.aboutLeftCon p {
+    padding: 0px 30px 0px 30px;
+}
+.first-letter {
+    font-size: 45px;
+    line-height: 70px;
+}
+.aboutRightCon {
+    
+}
+#aboutAvatar {  
+    margin: 140px 0px 0px 140px;
+    border-radius: 50%;
+    width: auto;
 }
