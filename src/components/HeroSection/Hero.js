@@ -43,6 +43,8 @@ function Hero() {
 
       This invisible container will be in the parent container that holds both the avatar pic and the solar system.  */}
 
+      {/* For the skill containers, look at using relative positioning, height and width as 100vh, 100vw, etc to keep it dynamic for mac and monitor. Also use percentage sizing to help this problem even further. Currently, skill containers overlap/overfill in the projects container on Mac book  */}
+
       <div className="rightSideHeroContainer">
         <img id="avatar-pic" src={Avatar}></img>
         <div className="solar-system"> 
