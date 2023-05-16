@@ -183,6 +183,7 @@ export default function Skills() {
     });
   }
   return (
+    <section className="skillContainer">
     <motion.section id="skillSection" className="skillSection">
       <div ref={sectionRef} className="skillDesktopContainer">
         <div className="parent">
@@ -376,5 +377,6 @@ export default function Skills() {
         </div>
       </div>
     </motion.section>
+    </section>
   );
 }

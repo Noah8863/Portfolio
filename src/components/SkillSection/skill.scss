@@ -1,13 +1,15 @@
 @import "../../main.scss";
 
-.skillSection {
-  height: 100%;
-  overflow-x: hidden;
+.skillContainer {
+  height: 100vh;
 }
+// .skillSection {
+//   height: 100%;
+//   overflow-x: hidden;
+// }
 .skillDesktopContainer {
   position: relative;
   display: flex;
-  top: 5%;
   justify-content: center;
   align-items: center;
   margin: auto;

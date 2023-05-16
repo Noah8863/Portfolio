@@ -1,12 +1,12 @@
 // Main Styles
 
-// html {
-//   scroll-snap-type: y mandatory;
-//   scroll-behavior: smooth;
-// }
-// section {
-//   scroll-snap-align: start;
-// }
+html {
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+section {
+  scroll-snap-align: start;
+}
 body::-webkit-scrollbar-thumb {
   background-color: blue; /* color of the scroll thumb */
   // border-radius: 20px; /* roundness of the scroll thumb */
