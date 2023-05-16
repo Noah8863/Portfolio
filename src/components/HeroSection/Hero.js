@@ -8,7 +8,7 @@ import Avatar from "../../Images/Avatar.PNG";
 function Hero() {
   return (
     <section id="heroContainer">
-      <div class="main-hero-container">
+      {/* <div class="main-hero-container">
         <div id="hero-statement">
           <h1>
             Hello, my name is Noah. I'm a full stack software developer with a
@@ -27,6 +27,16 @@ function Hero() {
           </div>
         </div>
         <div id="invisible-container"></div>
+      </div> */}
+      <div className="leftSideHeroContainer">
+        <p>HELLO</p>
+        <p>I'm <span className="name">Noah Hoffman</span> a Full Stack Web Developer</p> <br></br>
+        <p>Passionate about creating dynamic and user-friendly digital experiences. With a strong foundation in both frontend and backend development, I have the skills to bring design concepts to life and deliver seamless web applications.</p>
+        <br></br>
+        <button id="hireMeBtn">Hire Me</button><button id="portfolioBtn">Portfolio</button>
+      </div>
+      <div className="rightSideHeroContainer">
+        <img id="avatar-pic" src={Avatar}></img>
       </div>
     </section>
   );

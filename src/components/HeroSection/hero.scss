@@ -1,143 +1,194 @@
 @import "../../main.scss";
 
+// #heroContainer {
+//   position: relative;
+//   margin-top: 0%;
+//   // background-color: pink;
+//   width: auto;
+//   max-width: 100%;
+//   max-height: 90vh;
+// }
 #heroContainer {
-  position: relative;
-  margin-top: 0%;
-  // background-color: pink;
-  width: auto;
-  max-width: 100%;
-  max-height: 90vh;
-}
-.main-hero-container {
-  position: relative;
   display: grid;
-  grid-template-rows: auto auto;
+  grid-template-columns: 60% auto;
+  width: auto;
+  color: white;
+  margin-top:5%;
 }
-#hero-statement {
-  display: flex;
-  justify-content: center;
-  padding: 100px 25% 120px 25%;
-  text-align: center;
+.leftSideHeroContainer {
+  // background-color: blue;
+  padding: 100px;
 }
-#hero-picture-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.leftSideHeroContainer button{
+  // background-color: blue;
+  padding: 10px;
+  margin: 10px;
+  border-radius:20px;
+}
+#hireMeBtn {
+  background-color:#7f5af0;
+  color: #16161a;
+  font-size: 1.2em;
+}
+#hireMeBtn:hover {
+  background-color:#9f86ec;
+  transition: 0.7s;
+}
+#portfolioBtn {
+  background-color:#16161a;
+  color: #7f5af0;
+  font-size: 1.2em;
+}
+#portfolioBtn:hover {
+  background-color:#27272d;
+  transition: 0.7s;
+}
+.name {
+  font-size: 35px;
+  line-height: 10px;
+}
+.rightSideHeroContainer {
+  // background-color:pink;
+  padding: 100px;
 }
 #avatar-pic {
   position: relative;
-  width: 20%;
+  width: 50%;
   max-width: 100%;
   margin-top: 10%;
-  z-index: 3;
   background-color: #7f5af0;
-  box-shadow: 0px 0px 240px 20px #7f5af0;
+  border-radius: 50%;
 }
-#invisible-container {
-  position: relative;
-  width: 100vw;
-  height: 400px;
-  background-color: $background;
-  bottom: 70%;
-}
-.solar-system {
-  position: absolute;
-  width: 40rem;
-  max-width: 50rem;
-  height: 40rem;
-  max-height: 50rem;
+// .main-hero-container {
+//   position: relative;
+//   display: grid;
+//   grid-template-rows: auto auto;
+// }
+// #hero-statement {
+//   display: flex;
+//   justify-content: center;
+//   padding: 100px 25% 120px 25%;
+//   text-align: center;
+// }
+// #hero-picture-container {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+// }
+// #avatar-pic {
+//   position: relative;
+//   width: 20%;
+//   max-width: 100%;
+//   margin-top: 10%;
+//   z-index: 3;
+//   // background-color: #7f5af0;
   
-}
-.planet {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  border: 1px solid #dedede;
-  animation-name: rotatePlanet;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  animation-duration: 40s;
-  // animation-timing-function: linear;
-  // animation-iteration-count: infinite;
-  // animation-duration: 40s;
-}
-.planet:after {
-  content: "";
-  border-radius: 50%;
-  position: absolute;
-}
-.planet1 {
-  width: 100%;
-  height: 100%;
-  animation-duration: 15s;
-  &:after {
-    animation: rotateText 30s linear infinite;
-  }
-}
-.planet1:after {
-  content: "UX/UI Designer";
-  width: 4.8rem;
-  height: 4.8rem;
-  top: -40px;
-  background: #8a8380;
-  color: white;
-  text-align: center;
-}
-.planet2 {
-  width: 75%;
-  height: 75%;
-  animation-duration: 20s;
-}
+// }
+// #invisible-container {
+//   position: relative;
+//   width: 100vw;
+//   height: 400px;
+//   background-color: $background;
+//   bottom: 70%;
+// }
+// .solar-system {
+//   position: absolute;
+//   width: 50rem;
+//   max-width: 50rem;
+//   height: 50rem;
+//   max-height: 50rem;
+  
+// }
+// .planet {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   border-radius: 50%;
+//   border: 1px solid #dedede;
+//   animation-name: rotatePlanet;
+//   animation-timing-function: linear;
+//   animation-iteration-count: infinite;
+//   animation-duration: 40s;
+//   // animation-timing-function: linear;
+//   // animation-iteration-count: infinite;
+//   // animation-duration: 40s;
+// }
+// .planet:after {
+//   content: "";
+//   border-radius: 50%;
+//   position: absolute;
+// }
+// .planet1 {
+//   width: 100%;
+//   height: 100%;
+//   animation-duration: 85s;
+//   &:after {
+//     animation: rotateText 30s linear infinite;
+//   }
+// }
+// .planet1:after {
+//   content: "UX/UI Designer";
+//   width: 4.8rem;
+//   height: 4.8rem;
+//   top: -40px;
+//   background: #8a8380;
+//   color: white;
+//   text-align: center;
+// }
+// .planet2 {
+//   width: 75%;
+//   height: 75%;
+//   animation-duration: 40s;
+// }
 
-.planet2:after {
-  content: "React Developer";
-  width: 4.8rem;
-  height: 4.8rem;
-  top: -40px;
-  background: #ab711d;
-  text-align: center;
-  color: white;
-}
-.planet3 {
-  width: 77%;
-  height: 77%;
-  animation-duration: 34s;
-}
-.planet3:after {
-  content: "Node.js Developer";
-  width: 4.8rem;
-  height: 4.8rem;
-  top: -40px;
-  text-align: center;
-  color: white;
-  background: #707070;
-  animation: rotateText;
-}
+// .planet2:after {
+//   content: "React Developer";
+//   width: 4.8rem;
+//   height: 4.8rem;
+//   top: -40px;
+//   background: #ab711d;
+//   text-align: center;
+//   color: white;
+// }
+// .planet3 {
+//   width: 77%;
+//   height: 77%;
+//   animation-duration: 64s;
+// }
+// .planet3:after {
+//   content: "Node.js Developer";
+//   width: 4.8rem;
+//   height: 4.8rem;
+//   top: -40px;
+//   text-align: center;
+//   color: white;
+//   background: #707070;
+//   animation: rotateText;
+// }
 
-@keyframes rotatePlanet {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+// @keyframes rotatePlanet {
+//   from {
+//     transform: rotate(0deg);
+//   }
+//   to {
+//     transform: rotate(360deg);
+//   }
+// }
 
-@keyframes rotateText {
-  0% {
-    transform: rotate(0deg);
-  }
-  25% {
-    transform: rotate(90deg);
-  }
-  50% {
-    transform: rotate(180deg);
-  }
-  75% {
-    transform: rotate(270deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
+// @keyframes rotateText {
+//   0% {
+//     transform: rotate(0deg);
+//   }
+//   25% {
+//     transform: rotate(90deg);
+//   }
+//   50% {
+//     transform: rotate(180deg);
+//   }
+//   75% {
+//     transform: rotate(270deg);
+//   }
+//   100% {
+//     transform: rotate(360deg);
+//   }
+// }

@@ -7,7 +7,7 @@ function About() {
   return (
     <section className="about-section" id="about">
       <div className="aboutLeftCon">
-        <p><span class="first-letter">N</span>oah Hoffman is a skilled full stack web developer who graduated from the University of Denver Full Stack Bootcamp in August 2022. With a passion for frontend development and a willingness to take on backend work, Noah has been actively involved in the freelance industry, providing valuable services to local small businesses in Colorado. </p> <br></br>
+        <p><span className="first-letter">N</span>oah Hoffman is a skilled full stack web developer who graduated from the University of Denver Full Stack Bootcamp in August 2022. With a passion for frontend development and a willingness to take on backend work, Noah has been actively involved in the freelance industry, providing valuable services to local small businesses in Colorado. </p> <br></br>
         
         <p> Driven by a desire to create engaging and user-friendly websites, Noah thrives on turning design concepts into functional and intuitive interfaces. His expertise in HTML, CSS, JavaScript, and various frontend frameworks allows him to deliver dynamic and visually appealing web applications that meet clients' needs. </p> <br></br>
         
