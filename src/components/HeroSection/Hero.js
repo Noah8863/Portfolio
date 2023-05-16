@@ -28,6 +28,7 @@ function Hero() {
         </div>
         <div id="invisible-container"></div>
       </div> */}
+
       <div className="leftSideHeroContainer">
         <p>HELLO</p>
         <p>I'm <span className="name">Noah Hoffman</span> a Full Stack Web Developer</p> <br></br>
@@ -35,8 +36,23 @@ function Hero() {
         <br></br>
         <button id="hireMeBtn">Hire Me</button><button id="portfolioBtn">Portfolio</button>
       </div>
+
+      {/* Create div that holds both the avatar pic and solar system in. From there, you can use position:relative to hopfully keep both the avatar and solar system dynamic. 
+
+      Also, create an invisible container that will cut off half of the solar system but not the avatar pic. You can do this by using the z-index to layer the different containers. 
+
+      This invisible container will be in the parent container that holds both the avatar pic and the solar system.  */}
+
       <div className="rightSideHeroContainer">
         <img id="avatar-pic" src={Avatar}></img>
+        <div className="solar-system"> 
+            <div className="planet planet1">
+              <div className="planet planet2">
+                <div className="planet planet3">
+                </div>
+              </div>
+            </div>
+          </div>
       </div>
     </section>
   );

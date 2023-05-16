@@ -1,6 +1,6 @@
 .about-section {
     position: relative;
-    height: auto;
+    height: 100vh;
     width: auto; 
     background-color: #16161a;
     color: white;
@@ -9,8 +9,10 @@
     font-size: 1.5em;
 }
 .aboutLeftCon {
+    position: relative;
     margin: 5%;
     text-align: left;
+    overflow-x: scroll;
 }
 .aboutLeftCon p {
     padding: 0px 30px 0px 30px;
@@ -21,12 +23,12 @@
 }
 
 #aboutAvatar {  
-    margin: 260px 0px 0px 140px;
+    margin: 260px 0px 0px 100px;
     border-radius: 50%;
     width: auto;
 }
 #email {
-    margin: 20px 0px 0px 180px;
+    margin: 20px 0px 0px 100px;
 }
 // marginLeft: 180, marginTop: 20
 
