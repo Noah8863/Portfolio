@@ -10,16 +10,17 @@
 // }
 #heroContainer {
   display: grid;
-  grid-template-columns: 60% auto;
+  grid-template-columns: 50% auto;
   width: auto;
   color: white;
   margin-top:5%;
   height: 100vh;
   font-size: 1.5em;
+  overflow-x: hidden;
 }
 .leftSideHeroContainer {
   // background-color: blue;
-  padding: 30% 100px 0px 100px;
+  padding: 20% 100px 0px 100px;
 }
 .leftSideHeroContainer button{
   // background-color: blue;
@@ -56,13 +57,140 @@
 }
 #avatar-pic {
   position: relative;
-  width: 70%;
+  width: 50%;
   max-width: 100%;
   background-color: #7f5af0;
   border-radius: 50%;
-  top: 30%;
-  margin-left: 50px;
+  top: 15%;
+  margin-left: 20%;
+  z-index: 3;
 }
+.solar-system {
+  position: relative;
+  width: 55rem;
+  height: 55rem;
+  bottom: 20%;
+  right: 2%;
+  z-index: 1;
+}
+.invisibleContainer {
+  position: relative;
+  z-index: 2;
+  width: 110%;
+  height: 40rem;
+  background-color:#16161a;
+  background-color: blue;
+  bottom: 45%;
+  right: 90px;
+}
+#hero-quote {
+  position: relative;
+  z-index: 5;
+  color:white;
+  bottom: 80%;
+  right: 30px;
+  text-align: center;
+}
+.planet {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid #dedede;
+  animation-name: rotatePlanet;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: 40s;
+  // animation-timing-function: linear;
+  // animation-iteration-count: infinite;
+  // animation-duration: 40s;
+}
+.planet:after {
+  content: "";
+  border-radius: 50%;
+  position: absolute;
+}
+.planet1 {
+  width: 100%;
+  height: 100%;
+  animation-duration: 50s;
+  &:after {
+    animation: rotateText 50s linear infinite;
+  }
+}
+.planet1:after {
+  content: "UX/UI Designer";
+  width: 4.8rem;
+  height: 4.8rem;
+  top: -40px;
+  background: #8a8380;
+  color: white;
+  text-align: left;
+}
+.planet2 {
+  width: 80%;
+  height: 80%;
+  animation-duration: 40s;
+  &:after {
+    animation: rotateText 22s linear infinite;
+  }
+}
+
+.planet2:after {
+  content: "React Developer";
+  width: 4.8rem;
+  height: 4.8rem;
+  top: -40px;
+  background: #ab711d;
+  text-align: left;
+  color: white;
+}
+.planet3 {
+  width: 80%;
+  height: 80%;
+  animation-duration: 64s;
+  &:after {
+    animation: rotateText 15s linear infinite;
+  }
+}
+.planet3:after {
+  content: "Node.js Developer";
+  width: 4.8rem;
+  height: 4.8rem;
+  top: -40px;
+  text-align: left;
+  color: white;
+  background: #707070;
+  z-index: 1;
+}
+
+@keyframes rotatePlanet {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotateText {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-90deg);
+  }
+  50% {
+    transform: rotate(-180deg);
+  }
+  75% {
+    transform: rotate(-270deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
 // .main-hero-container {
 //   position: relative;
 //   display: grid;
@@ -95,108 +223,6 @@
 //   background-color: $background;
 //   bottom: 70%;
 // }
-.solar-system {
-  position: absolute;
-  width: 30rem;
-  max-width: 50rem;
-  height: 30rem;
-  max-height: 50rem;
-  bottom: 9%;
-  right: 4%;
-}
-.planet {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  border: 1px solid #dedede;
-  animation-name: rotatePlanet;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  animation-duration: 40s;
-  // animation-timing-function: linear;
-  // animation-iteration-count: infinite;
-  // animation-duration: 40s;
-}
-.planet:after {
-  content: "";
-  border-radius: 50%;
-  position: absolute;
-}
-.planet1 {
-  width: 100%;
-  height: 100%;
-  animation-duration: 85s;
-  &:after {
-    animation: rotateText 30s linear infinite;
-  }
-}
-.planet1:after {
-  content: "UX/UI Designer";
-  width: 4.8rem;
-  height: 4.8rem;
-  top: -40px;
-  background: #8a8380;
-  color: white;
-  text-align: center;
-}
-.planet2 {
-  width: 75%;
-  height: 75%;
-  animation-duration: 40s;
-}
-
-.planet2:after {
-  content: "React Developer";
-  width: 4.8rem;
-  height: 4.8rem;
-  top: -40px;
-  background: #ab711d;
-  text-align: center;
-  color: white;
-}
-.planet3 {
-  width: 77%;
-  height: 77%;
-  animation-duration: 64s;
-}
-.planet3:after {
-  content: "Node.js Developer";
-  width: 4.8rem;
-  height: 4.8rem;
-  top: -40px;
-  text-align: center;
-  color: white;
-  background: #707070;
-  animation: rotateText;
-}
-
-@keyframes rotatePlanet {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes rotateText {
-  0% {
-    transform: rotate(0deg);
-  }
-  25% {
-    transform: rotate(90deg);
-  }
-  50% {
-    transform: rotate(180deg);
-  }
-  75% {
-    transform: rotate(270deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
 
 @media screen and (max-width:800px){
   #heroContainer {

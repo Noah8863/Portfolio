@@ -55,6 +55,8 @@ function Hero() {
               </div>
             </div>
           </div>
+          <div className="invisibleContainer"></div>
+          {/* <p id="hero-quote">Center of My Creations</p> */}
       </div>
     </section>
   );

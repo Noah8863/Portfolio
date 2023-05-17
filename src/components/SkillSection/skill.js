@@ -202,7 +202,7 @@ export default function Skills() {
               initial="hidden"
               animate={leftContainer}
             >
-              <h2>Front End Developement</h2>
+              <h2>Front End Development</h2>
             </motion.div>
             <motion.div
               className="leftContainerDetails"
@@ -240,7 +240,7 @@ export default function Skills() {
               initial="hidden"
               animate={rightContainer}
             >
-              <h2 id="backEndText">Back End Developement</h2>
+              <h2 id="backEndText">Back End Development</h2>
             </motion.div>
           </div>
 
