@@ -10,17 +10,17 @@
 // }
 #heroContainer {
   display: grid;
-  grid-template-columns: 50% auto;
+  grid-template-columns: auto auto;
   width: auto;
   color: white;
   margin-top:5%;
   height: 100vh;
   font-size: 1.5em;
-  overflow-x: hidden;
+  // overflow-x: hidden;
 }
 .leftSideHeroContainer {
   // background-color: blue;
-  padding: 20% 100px 0px 100px;
+  padding: 20% 50px 0px 50px;
 }
 .leftSideHeroContainer button{
   // background-color: blue;
@@ -53,31 +53,32 @@
   line-height: 10px;
 }
 .rightSideHeroContainer {
-  padding: 100px;
+  padding: 50px;
 }
 #avatar-pic {
   position: relative;
-  width: 50%;
+  width: 20vw;
   max-width: 100%;
   background-color: #7f5af0;
   border-radius: 50%;
-  top: 15%;
-  margin-left: 20%;
+  top: 35vh;
+  margin-left: 25%;
   z-index: 3;
 }
 .solar-system {
   position: relative;
-  width: 55rem;
-  height: 55rem;
-  bottom: 20%;
-  right: 2%;
+  width: 40vw;
+  max-width: 40vw;
+  height: 40vw;
+  max-width: 40vw;
+  top:-20vh;
   z-index: 1;
 }
 .invisibleContainer {
   position: relative;
   z-index: 2;
-  width: 110%;
-  height: 40rem;
+  width: 20vw;
+  height: 60vh;
   background-color:#16161a;
   background-color: blue;
   bottom: 45%;
@@ -100,7 +101,6 @@
   animation-name: rotatePlanet;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
-  animation-duration: 40s;
   // animation-timing-function: linear;
   // animation-iteration-count: infinite;
   // animation-duration: 40s;
@@ -113,9 +113,9 @@
 .planet1 {
   width: 100%;
   height: 100%;
-  animation-duration: 50s;
+  animation-duration: 40s;
   &:after {
-    animation: rotateText 50s linear infinite;
+    animation: rotateText 40s linear infinite;
   }
 }
 .planet1:after {
@@ -132,7 +132,7 @@
   height: 80%;
   animation-duration: 40s;
   &:after {
-    animation: rotateText 22s linear infinite;
+    animation: rotateText 20s linear infinite;
   }
 }
 
@@ -148,9 +148,9 @@
 .planet3 {
   width: 80%;
   height: 80%;
-  animation-duration: 64s;
+  animation-duration: 30s;
   &:after {
-    animation: rotateText 15s linear infinite;
+    animation: rotateText 12s linear infinite;
   }
 }
 .planet3:after {
