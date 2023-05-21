@@ -54,6 +54,7 @@
 }
 .rightSideHeroContainer {
   padding: 50px;
+  // background-color: pink;
 }
 #avatar-pic {
   position: relative;
@@ -77,20 +78,18 @@
 .invisibleContainer {
   position: relative;
   z-index: 2;
-  width: 20vw;
-  height: 60vh;
   background-color:#16161a;
-  background-color: blue;
-  bottom: 45%;
-  right: 90px;
+  width: 120%;
+  height: 50vh;
+  right: 10%;
+  bottom: 40%;
+  text-align: center;
 }
 #hero-quote {
   position: relative;
   z-index: 5;
   color:white;
-  bottom: 80%;
-  right: 30px;
-  text-align: center;
+  top: 55%;
 }
 .planet {
   display: flex;
