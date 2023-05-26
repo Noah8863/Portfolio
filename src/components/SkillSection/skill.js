@@ -188,7 +188,7 @@ export default function Skills() {
       <div ref={sectionRef} className="skillDesktopContainer">
         <div className="parent">
           <motion.h1
-            style={{ textAlign: "center" }}
+            style={{ textAlign: "center"}}
             id="fullStack"
             initial="hidden"
             animate={FadeIn}
@@ -202,7 +202,7 @@ export default function Skills() {
               initial="hidden"
               animate={leftContainer}
             >
-              <h2>Front End Development</h2>
+              <p>Front End Development</p>
             </motion.div>
             <motion.div
               className="leftContainerDetails"
@@ -210,13 +210,13 @@ export default function Skills() {
               animate={leftDescription}
             >
               <ul className="skillList">
-                <h5>HTML</h5>
-                <h5>CSS</h5>
-                <h5>SCSS</h5>
-                <h5>Javascript</h5>
-                <h5>React</h5>
-                <h5>JSX</h5>
-                <h5>Framer-Motion</h5>
+                <p>HTML</p>
+                <p>CSS</p>
+                <p>SCSS</p>
+                <p>Javascript</p>
+                <p>React</p>
+                <p>JSX</p>
+                <p>Framer-Motion</p>
               </ul>
             </motion.div>
           </div>
@@ -228,10 +228,10 @@ export default function Skills() {
               animate={rightDescription}
             >
               <ul className="skillList">
-                <h5>Express</h5>
-                <h5>Node.js</h5>
-                <h5>Javascript</h5>
-                <h5>Restful API's</h5>
+                <p>Express</p>
+                <p>Node.js</p>
+                <p>Javascript</p>
+                <p>Restful API's</p>
               </ul>
             </motion.div>
             <motion.div
@@ -240,7 +240,7 @@ export default function Skills() {
               initial="hidden"
               animate={rightContainer}
             >
-              <h2 id="backEndText">Back End Development</h2>
+              <p id="backEndText">Back End Development</p>
             </motion.div>
           </div>
 
@@ -251,7 +251,7 @@ export default function Skills() {
               initial="hidden"
               animate={leftContainer}
             >
-              <h2 id="databaseText">Databases</h2>
+              <p id="databaseText">Databases</p>
             </motion.div>
             <motion.div
               className="leftContainerDetails"
@@ -259,10 +259,10 @@ export default function Skills() {
               animate={leftDescription}
             >
               <ul className="skillList">
-                <h5>SQL</h5>
-                <h5>NoSQL</h5>
-                <h5>MongoDB</h5>
-                <h5>GraphQL</h5>
+                <p>SQL</p>
+                <p>NoSQL</p>
+                <p>MongoDB</p>
+                <p>GraphQL</p>
               </ul>
             </motion.div>
           </div>
@@ -274,14 +274,14 @@ export default function Skills() {
               animate={rightDescription}
             >
               <ul className="skillList">
-                <h5>Git</h5>
-                <h5>GitHub</h5>
-                <h5>VS Code</h5>
-                <h5>Zsh/Bash</h5>
-                <h5>Netlify</h5>
-                <h5>Heroku</h5>
-                <h5>Jest</h5>
-                <h5>Webpack</h5>
+                <p>Git</p>
+                <p>GitHub</p>
+                <p>VS Code</p>
+                <p>Zsh/Bash</p>
+                <p>Netlify</p>
+                <p>Heroku</p>
+                <p>Jest</p>
+                <p>Webpack</p>
               </ul>
             </motion.div>
             <motion.div
@@ -290,7 +290,7 @@ export default function Skills() {
               initial="hidden"
               animate={rightContainer}
             >
-              <h2 id="toolsText">Tools</h2>
+              <p id="toolsText">Tools</p>
             </motion.div>
           </div>
         </div>
