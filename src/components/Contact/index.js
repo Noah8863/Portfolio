@@ -84,7 +84,7 @@ function Contact() {
         <p type="Email:">
           <input
             className="inputfield"
-            id="email"
+            id="emails"
             placeholder="Write your email here.."
           ></input>
         </p>

@@ -29,6 +29,7 @@
   border-radius:20px;
 }
 #hireMeBtn {
+  display:inline-block;
   background-color:#7f5af0;
   color: #16161a;
   font-size: 1.2em;
@@ -39,10 +40,11 @@
   transition: 0.7s;
 }
 #portfolioBtn {
+  position: relative;
+  display:inline-block;
   background-color:#16161a;
   color: #7f5af0;
   font-size: 1.2em;
-  margin-left: 20px;
 }
 #portfolioBtn:hover {
   background-color:#27272d;
